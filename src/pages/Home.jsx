@@ -23,7 +23,7 @@ export function Home() {
        />
 
       <Hero />
-      <RadioPlayer />
+      {/* <RadioPlayer /> */}
       <div id="areas" className="relative">
         <Banner />
         <Areas />
