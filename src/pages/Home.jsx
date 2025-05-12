@@ -25,10 +25,10 @@ export function Home() {
           content="fundación neuquén oeste, Neuquén, servicio, comunidad, educación, deporte, comunicación, mediación, instituto superior, colegio, desarrollo social, transformación social, áreas de trabajo, colegio, mediación comunitaria, prácticas restaurativas, inclusión social, formación, capacitación, diálogo, respeto, valores, bienestar familiar, desarrollo integral, fundacion neuquen oeste, fundacion, fundacion neuquen, fundacion neuquen oeste, fundacion neuquen oeste argentina, fundacion neuquen oeste mediacion, fundacion neuquen oeste comunicacion, fundacion neuquen oeste deporte, fundacion neuquen oeste educacion, fundacion neuquen oeste comunidad, fundacion neuquen oeste isei, fundacion neuquen oeste colegio, fundacion neuquen oeste mediación, fundación neuquén oeste mediación comunitaria"
         />
         <meta name="author" content="Fundación Neuquén Oeste" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/" />
         <meta
           property="og:title"
           content="Fundación Neuquén Oeste: Servicio y Comunidad en Neuquén"

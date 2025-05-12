@@ -23,10 +23,10 @@ export function Comunidad() {
           content="comunidad, fundación neuquén oeste, presente con conciencia, apoyo comunitario, desarrollo infantil, talleres, charlas informativas, Neuquén, valores, vínculos familiares, prevención, ayuda escolar, acompañamiento, mujeres, niños, familia, educación, inclusión social, desarrollo comunitario, fundacion, comunidad, bienestar familiar, desarrollo integral"
         />
         <meta name="author" content="Fundación Neuquén Oeste - Área Comunidad" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/comunidad" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/comunidad" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/comunidad" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/comunidad" />
         <meta
           property="og:title"
           content="Comunidad en Fundación Neuquén Oeste: Impulsando un Presente con Conciencia"

@@ -24,10 +24,10 @@ export function Deporte() {
           content="deporte, fundación neuquén oeste, transformación social, actividades deportivas, fútbol, voley, handball, judo, taekwondo, Neuquén, vida sana, compañerismo, desarrollo comunitario, valores, inclusión, deporte social, fundacion, deporte inclusivo, educación física, formación integral, trabajo en equipo, salud, bienestar, comunidad, fundacion neuquen oeste"
         />
         <meta name="author" content="Fundación Neuquén Oeste - Área Deporte" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/deporte" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/deporte" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/deporte" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/deporte" />
         <meta
           property="og:title"
           content="Deporte en Fundación Neuquén Oeste: Transformando Vidas y Comunidades"

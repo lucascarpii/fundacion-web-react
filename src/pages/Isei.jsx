@@ -23,10 +23,10 @@ export function Isei() {
           content="isei, instituto superior, estudios interdisciplinarios, transformación social, neuquén, fundación neuquén oeste, educación superior, campus virtual, deporte social, comunidad restaurativa, mediación, formación, capacitación, educación inclusiva, diálogo, respeto, conocimiento, compromiso social, fundacion"
         />
         <meta name="author" content="ISEI - Instituto Superior de Estudios Interdisciplinarios (Fundación Neuquén Oeste)" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/isei" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/isei" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/isei" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/isei" />
         <meta
           property="og:title"
           content="ISEI | Formamos Agentes de Transformación Social en Neuquén"

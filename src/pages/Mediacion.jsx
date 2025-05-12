@@ -26,10 +26,10 @@ export function Mediacion() {
           content="mediación, prácticas restaurativas, CPREM, fundación neuquén oeste, resolución de conflictos, diálogo, comunidad, Neuquén, capacitación, círculos restaurativos, mediación comunitaria, mediación escolar, mediación familiar, mediación vecinal, formación, educación, inclusión social, justicia restaurativa, prevención de conflictos, fundacion, mediación en neuquén"
         />
         <meta name="author" content="Fundación Neuquén Oeste - CPREM" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/mediacion" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/mediacion" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/mediacion" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/mediacion" />
         <meta
           property="og:title"
           content="CPREM: Mediación y Prácticas Restaurativas en Neuquén | Fundación Neuquén Oeste"

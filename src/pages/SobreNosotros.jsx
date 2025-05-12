@@ -25,10 +25,10 @@ export function SobreNosotros() {
           content="fundación neuquén oeste, sobre nosotros, historia, misión, visión, valores, Neuquén, educación, desarrollo comunitario, colegio, principios, acompañamiento, respeto, compasión, empatía, igualdad, solidaridad, comunidad, fundacion, compromiso social, educación integral, desarrollo sostenible, responsabilidad social, inclusión, bienestar social, trabajo comunitario, formación integral, crecimiento personal, desarrollo humano, conciencia social, educación en valores, desarrollo personal, compromiso educativo, formación continua, educación para la paz, educación inclusiva, desarrollo social, educación de calidad"
         />
         <meta name="author" content="Fundación Neuquén Oeste" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/sobre-nosotros" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/sobre-nosotros" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/sobre-nosotros" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/sobre-nosotros" />
         <meta
           property="og:title"
           content="Fundación Neuquén Oeste: Conoce Nuestro Ideal y Compromiso Comunitario"

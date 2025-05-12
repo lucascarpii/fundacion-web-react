@@ -27,11 +27,11 @@ export function Colegio() {
         />
 
         <meta name="author" content="Fundación Neuquén Oeste" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/colegio" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/colegio" />
 
         {/* Open Graph / Facebook - Para compartir en redes sociales */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/colegio" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/colegio" />
         <meta
           property="og:title"
           content="Fundación Neuquén Oeste | Creciendo Juntos por un Futuro Mejor"

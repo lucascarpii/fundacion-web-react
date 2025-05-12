@@ -22,10 +22,10 @@ export function Hidroponia() {
           content="hidroponía, fundación neuquén oeste, Neuquén Oeste, energía solar, invernadero, sostenible, laboratorio vivo, cultivo, conciencia, valores, futuro, CALF, sustentabilidad, educación ambiental, comunidad, fundacion, hidroponía en Neuquén, cultivo sin suelo, agricultura urbana, tecnología sostenible, innovación, desarrollo comunitario, educación, formación integral, responsabilidad social, medio ambiente, producción sostenible"
         />
         <meta name="author" content="Fundación Neuquén Oeste - Hidroponía Neuquén Oeste" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/hidroponia" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/hidroponia" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/hidroponia" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/hidroponia" />
         <meta
           property="og:title"
           content="Hidroponía Neuquén Oeste: Innovación Sostenible y Educación | Fundación Neuquén Oeste"

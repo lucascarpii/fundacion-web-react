@@ -24,10 +24,10 @@ export function Comunicacion() {
           content="comunicación, fundación neuquén oeste, mensaje de esperanza, radio, televisión, blogs, streaming, mentes de servicio, Neuquén, paz, amor, acompañamiento, servicio, comunidad, valores, educación, fundacion, comunicación social, medios de comunicación, difusión, mentes de servicio, comunicación comunitaria, diálogo, respeto, inclusión"
         />
         <meta name="author" content="Fundación Neuquén Oeste - Área Comunicación" />
-        <link rel="canonical" href="https://fundacionnqnoeste.com/comunicacion" />
+        <link rel="canonical" href="https://fundacion.tamnora.com/comunicacion" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://fundacionnqnoeste.com/comunicacion" />
+        <meta property="og:url" content="https://fundacion.tamnora.com/comunicacion" />
         <meta
           property="og:title"
           content="Comunicación en Fundación Neuquén Oeste: Difundiendo un Mensaje de Esperanza"
