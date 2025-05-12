@@ -45,7 +45,7 @@ export function Hero() {
 
 
           <div className="hidden lg:flex items-center justify-end  relative z-20">
-            <img src="/enca_comunicacion.jpg" className='w-full aspect-video object-cover rounded-3xl rounded-br-none shadow-2xl' alt="" />
+            <img src="/enca_comunicacion.webp" className='w-full aspect-video object-cover rounded-3xl rounded-br-none shadow-2xl' alt="" />
           </div>
         </div>
       </div>

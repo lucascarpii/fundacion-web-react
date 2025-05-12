@@ -1,24 +1,31 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import { Helmet } from 'react-helmet'; // O la importación de tu librería Helmet
 import { Footer } from "../components/Footer";
 import { formatDate } from "../lib/tmn";
 import { runCode } from "../components/hooks/useRunCode";
 import { ArrowRightIcon } from "../icons/ArrowRight";
+import { MetaData } from "../components/MetaData";
 
 export function Noticia() {
   const { id } = useParams();
   const [articleData, setArticleData] = useState(null);
   const [relatedArticles, setRelatedArticles] = useState([]);
+  const idDecoded = atob(id);
+
+  // useEffect(() => {
+  //   window.scrollTo(0, 0);
+  // }, []);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
+
+
 
   useEffect(() => {
     const fetchData = async () => {
       // Tu lógica para obtener articleData y relatedArticles se mantiene igual
-      const response = await runCode(`-st news -wr id[${id}]`);
+      const response = await runCode(`-st news -wr id[${idDecoded}]`);
       const article = response.map((a) => ({
         id: a.id,
         title: a.title,
@@ -29,6 +36,7 @@ export function Noticia() {
         content: a.content,
         imageUrl: a.featured_image_url, // Esta URL debe ser absoluta para og:image
         category_id: a.category_id,
+        idEncoded: btoa(a.news_id),
         // category_name: a.category_name, // Si puedes obtener el nombre de la categoría
       }))[0];
       setArticleData(article);
@@ -43,6 +51,7 @@ export function Noticia() {
             id: a.id,
             title: a.title,
             imageUrl: a.featured_image_url,
+            idEncoded: btoa(a.id),
           }));
         setRelatedArticles(filtered);
       }
@@ -54,35 +63,27 @@ export function Noticia() {
   if (!articleData) return <div className="mt-24 text-center">Cargando...</div>;
 
   // Construye la URL canónica completa
-  const canonicalUrl = `https://fundacionnqnoeste.com/noticias/${articleData.id}`;
+  const canonicalUrl = `https://fundacion.tamnora.com/noticias/${articleData.idEncoded}`;
 
   // Asegura que la URL de la imagen para Open Graph sea absoluta
   // Si articleData.imageUrl ya es una URL absoluta, puedes usarla directamente.
   // Si es una ruta relativa (ej: /uploads/imagen.jpg), necesitas anteponer el dominio.
   let ogImageUrl = articleData.imageUrl;
   if (articleData.imageUrl && !articleData.imageUrl.startsWith('http')) {
-    ogImageUrl = `https://fundacionnqnoeste.com${articleData.imageUrl.startsWith('/') ? '' : '/'}${articleData.imageUrl}`;
+    ogImageUrl = `https://fundacion.tamnora.com${articleData.imageUrl.startsWith('/') ? '' : '/'}${articleData.imageUrl}`;
   }
 
 
   return (
     <>
-      <Helmet>
-        <title>{`${articleData.title} | Fundación Neuquén Oeste`}</title>
-        <meta name="description" content={articleData.description} />
-        <meta name="keywords" content={`noticia, ${articleData.title}, fundación neuquén oeste, Neuquén, neuquen, fundacion, articulo`} />
-        <meta name="author" content="Fundación Neuquén Oeste" />
-        <link rel="canonical" href={canonicalUrl} />
-        <meta property="og:type" content="article" />
-        <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:title" content={articleData.title} />
-        <meta property="og:description" content={articleData.description} />
-        <meta property="og:image" content={ogImageUrl} />
-        <meta property="og:image:alt" content={articleData.title} />
-        <meta property="og:site_name" content="Fundación Neuquén Oeste" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <html lang="es" />
-      </Helmet>
+      <MetaData
+        title={articleData.title}
+        description={articleData.description}
+        image={ogImageUrl}
+        url={canonicalUrl}
+      />
+
+
 
       <article className="max-w-screen-xl mx-auto px-6 lg:px-0 py-8 mt-[90px] border-t grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="flex flex-col col-span-2">
@@ -111,7 +112,7 @@ export function Noticia() {
               {relatedArticles.map((relatedArticle) => (
                 <li key={relatedArticle.id}>
                   <Link
-                    to={`/noticias/${relatedArticle.id}`}
+                    to={`/noticias/${relatedArticle.idEncoded}`}
                     className="flex items-center gap-4"
                   >
                     <img

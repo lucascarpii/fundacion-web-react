@@ -12,6 +12,7 @@ import { SobreNosotros } from './pages/SobreNosotros.jsx';
 import { Noticia } from './pages/Noticia.jsx';
 import { Header } from './components/Header.jsx';
 
+
 function AppContent() {
   const location = useLocation();
   const isDarkTheme = location.pathname === '/' || location.pathname === '/mediacion';
