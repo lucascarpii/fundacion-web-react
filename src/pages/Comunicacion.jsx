@@ -36,7 +36,7 @@ export function Comunicacion() {
           property="og:description"
           content="A través de radio, TV, blogs y streaming, el área de Comunicación de Fundación Neuquén Oeste lleva un mensaje de esperanza, paz, amor y servicio a cada hogar en Neuquén."
         />
-        <meta property="og:image" content="/og-comunicacion.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-comunicacion.webp" />
         <meta property="og:image:alt" content="Comunicación y Difusión - Fundación Neuquén Oeste" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

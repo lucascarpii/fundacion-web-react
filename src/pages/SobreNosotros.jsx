@@ -37,7 +37,7 @@ export function SobreNosotros() {
           property="og:description"
           content="Descubre la historia, los principios y el trabajo de Fundación Neuquén Oeste. Comprometidos con la educación y el desarrollo de la comunidad en Neuquén desde 1998."
         />
-        <meta property="og:image" content="/og-sobre-nosotros.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-sobre-nosotros.webp" />
         <meta property="og:image:alt" content="Fundación Neuquén Oeste - Un gran ideal construye un mundo mejor" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

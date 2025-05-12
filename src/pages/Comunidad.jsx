@@ -35,7 +35,7 @@ export function Comunidad() {
           property="og:description"
           content="Conoce cómo el área de Comunidad de Fundación Neuquén Oeste trabaja por el bienestar familiar y el desarrollo integral, fortaleciendo vínculos y valores en Neuquén."
         />
-        <meta property="og:image" content="/og-comunidad.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-comunidad.webp" />
         <meta property="og:image:alt" content="Trabajo Comunitario - Fundación Neuquén Oeste" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

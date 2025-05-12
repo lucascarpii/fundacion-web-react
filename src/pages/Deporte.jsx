@@ -36,7 +36,7 @@ export function Deporte() {
           property="og:description"
           content="Explora las iniciativas deportivas de Fundación Neuquén Oeste. Fomentamos el desarrollo integral, el compañerismo y fortalecemos los lazos comunitarios en Neuquén."
         />
-        <meta property="og:image" content="/og-deporte.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-deporte.webp" />
         <meta property="og:image:alt" content="Actividades Deportivas - Fundación Neuquén Oeste" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

@@ -41,7 +41,7 @@ export function Colegio() {
           content="Conoce nuestra innovadora propuesta educativa para Nivel Inicial, Primario y Secundario (jóvenes y adultos) en Fundación Neuquén Oeste."
         />
 
-        <meta property="og:image" content="/og-colegio.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-colegio.webp" />
         <meta property="og:image:alt" content="Fundación Neuquén Oeste - Colegio" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

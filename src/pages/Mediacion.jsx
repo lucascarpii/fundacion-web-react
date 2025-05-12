@@ -38,7 +38,7 @@ export function Mediacion() {
           property="og:description"
           content="Conoce el Centro de Prácticas Restaurativas y Mediación (CPREM) de Fundación Neuquén Oeste. Facilitamos el diálogo y la resolución pacífica de conflictos comunitarios, vecinales, escolares y familiares."
         />
-        <meta property="og:image" content="/og-mediacion.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-mediacion.webp" />
         <meta property="og:image:alt" content="Mediación y Prácticas Restaurativas - CPREM - Fundación Neuquén Oeste" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

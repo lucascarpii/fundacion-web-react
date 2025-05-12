@@ -37,7 +37,7 @@ export function Home() {
           property="og:description"
           content="Explora las iniciativas y áreas de trabajo de Fundación Neuquén Oeste. Comprometidos con la transformación social, la educación y el cultivo de la comunidad en Neuquén."
         />
-        <meta property="og:image" content="/og-fundacion-principal.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-fundacion-principal.webp" />
         <meta property="og:image:alt" content="Fundación Neuquén Oeste - Transformamos desde el servicio, cultivando comunidad" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

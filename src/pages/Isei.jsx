@@ -35,7 +35,7 @@ export function Isei() {
           property="og:description"
           content="Conoce el ISEI de Fundación Neuquén Oeste y nuestra propuesta para una educación superior comprometida con la transformación social y la comunidad."
         />
-        <meta property="og:image" content="/og-isei.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-isei.webp" />
         <meta property="og:image:alt" content="ISEI - Instituto Superior de Estudios Interdisciplinarios" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 

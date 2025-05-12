@@ -34,7 +34,7 @@ export function Hidroponia() {
           property="og:description"
           content="Explora nuestro invernadero hidropónico con energía solar en Fundación Neuquén Oeste. Un espacio de aprendizaje colaborativo y respeto por la sustentabilidad para estudiantes y la comunidad."
         />
-        <meta property="og:image" content="/og-hidroponia.png" />
+        <meta property="og:image" content="https://fundacion.tamnora.com/og-hidroponia.webp" />
         <meta property="og:image:alt" content="Hidroponía Neuquén Oeste - Invernadero con Energía Solar" />
         <meta property="og:site_name" content="Fundación Neuquén Oeste" />
 
