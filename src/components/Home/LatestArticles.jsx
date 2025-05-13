@@ -30,6 +30,7 @@ export const LatestArticles = () => {
         imageUrl: article.featured_image_url,
         categoryId: article.category_id,
         category: article.name,
+        idEncoded: btoa(article.news_id),
       }));
       setArticles(fetchedArticles);
     };
@@ -76,7 +77,7 @@ export const LatestArticles = () => {
         <>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginatedArticles.map((article) => (
-              <Link to={`/noticias/${article.id}`} key={article.id} className="flex flex-col">
+              <Link to={`/noticias/${article.idEncoded}`} key={article.id} className="flex flex-col">
                 <div
                   className="bg-gray-300 w-full aspect-[4/3] mb-4 relative"
                   style={{ backgroundImage: `url(${article.imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}

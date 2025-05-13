@@ -16,7 +16,7 @@ export function Banner() {
       try {
         const result = await runCode('-st live_stream_config;');
         const config = result[0];
-        setIsLive(config.is_live === "1");
+        setIsLive(config.is_live == "1");
         // console.log(result)
         setStreamData({
           url: config.stream_url,

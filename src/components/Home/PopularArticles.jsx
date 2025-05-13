@@ -31,6 +31,7 @@ export const PopularArticles = () => {
         imageUrl: article.featured_image_url,
         categoryId: article.category_id,
         category: article.name,
+        idEncoded: btoa(article.news_id),
       }));
       setArticles(fetchedArticles);
     };
@@ -46,7 +47,7 @@ export const PopularArticles = () => {
         {articles
           .filter((article, index) => index === 0)
           .map((article) => (
-            <Link to={`/noticias/${article.id}`} key={article.id} className="flex flex-col h-full">
+            <Link to={`/noticias/${article.idEncoded}`} key={article.id} className="flex flex-col h-full">
               <div
                 className="bg-gray-300 aspect-[7/6] w-full mb-5 relative"
                 style={{ backgroundImage: `url(${article.imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
@@ -66,7 +67,7 @@ export const PopularArticles = () => {
           {articles
             .filter((article, index) => index !== 0)
             .map((article) => (
-              <Link to={`/noticias/${article.id}`} key={article.id} className="grid gap-5 grid-cols-2">
+              <Link to={`/noticias/${article.idEncoded}`} key={article.id} className="grid gap-5 grid-cols-2">
                 <div
                   className="bg-gray-300 w-full aspect-[4/3] mr-4 relative"
                   style={{ backgroundImage: `url(${article.imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}

@@ -19,10 +19,10 @@ export default {
         'title-black': '#101829',
       },
       backgroundImage: {
-        'hero-image': "url('/cultivando-comunidad.jpeg')",
+        'hero-image': "url('/cultivando-comunidad.webp')",
         'accompany': "url('/acompañar.jpg')",
-        'igualdad': "url('/igualdad.jpg')",
-        'compasion': "url('/compasion.jpg')",
+        'igualdad': "url('/igualdad.webp')",
+        'compasion': "url('/compasion.webp')",
         'radial-gradient': 'radial-gradient(circle, white, transparent)',
         'hero-radial-gradient': 'radial-gradient(circle, rgba(0,0,0,0) 30%, rgba(255,255,255,1) 80%)',
       },

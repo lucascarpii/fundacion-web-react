@@ -42,7 +42,7 @@ export function Hero() {
             </motion.span>
           </h1>
           <motion.a
-            href='https://fundacionnqnoeste.com/appmediadores/mu.apk'
+            href='https://fundacion.tamnora.com/appmediadores/mu.apk'
             target='_blank'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
