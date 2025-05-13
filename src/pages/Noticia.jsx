@@ -63,11 +63,7 @@ export function Noticia() {
   if (!articleData) return <div className="mt-24 text-center">Cargando...</div>;
 
   // Construye la URL canónica completa
-<<<<<<< HEAD
-  const canonicalUrl = `https://fundacion.tamnora.com/noticias/${articleData.id}`;
-=======
   const canonicalUrl = `https://fundacion.tamnora.com/noticias/${articleData.idEncoded}`;
->>>>>>> 2161ab26cae8b70e4ea73f908e87c6b00bdcb5bd
 
   // Asegura que la URL de la imagen para Open Graph sea absoluta
   // Si articleData.imageUrl ya es una URL absoluta, puedes usarla directamente.
@@ -86,8 +82,6 @@ export function Noticia() {
         image={ogImageUrl}
         url={canonicalUrl}
       />
-
-
 
       <article className="max-w-screen-xl mx-auto px-6 lg:px-0 py-8 mt-[90px] border-t grid grid-cols-1 lg:grid-cols-3 gap-6">
         <div className="flex flex-col col-span-2">
