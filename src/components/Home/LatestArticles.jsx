@@ -68,6 +68,15 @@ export const LatestArticles = () => {
     setCurrentPage(page);
   };
 
+  useEffect(() => {
+  const section = document.getElementById("last-news");
+  if (section) {
+    const yOffset = -80; // ajustar según la altura de tu navbar
+    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+}, [currentPage]);
+
   return (
     <div className="max-w-screen-xl mx-auto px-4 pt-8 pb-20">
       <h2 className="text-4xl mb-6">Últimas noticias</h2>
@@ -75,7 +84,7 @@ export const LatestArticles = () => {
         <p className="text-gray-500 text-center">No hay noticias disponibles en este momento.</p>
       ) : (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div id="last-news" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginatedArticles.map((article) => (
               <Link to={`/noticias/${article.idEncoded}`} key={article.id} className="flex flex-col">
                 <div
