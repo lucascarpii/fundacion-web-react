@@ -47,7 +47,7 @@ export function Hero() {
           
           </div>
         </div>
-        <img src="/isei_logo_enca.png" className='h-28 md:h-40' alt="" />
+        <img src="/image/isei_logo_enca.png" className='h-28 md:h-40' alt="" />
       </div>
     </section>
   )

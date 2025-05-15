@@ -66,7 +66,7 @@ export function Hero2() {
           >
             <img
               alt="App screenshot"
-              src="/enca_mediacion.jpg"
+              src="/image/enca_mediacion.jpg"
               width={1824}
               height={1080}
               className="w-full aspect-video lg:aspect-[5/3.5] object-cover max-w-lg rounded-2xl bg-white/5 ring-4 ring-white/10"

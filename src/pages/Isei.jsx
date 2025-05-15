@@ -15,7 +15,7 @@ export function Isei() {
       <MetaData
         title="ISEI - Instituto Superior de Estudios Interdisciplinarios | Fundación Neuquén Oeste"
         description="Descubre ISEI, el Instituto Superior de Estudios Interdisciplinarios de Fundación Neuquén Oeste. Formamos agentes de transformación social a través de una educación que construye conocimientos y promueve el diálogo y respeto."
-        image="https://fundacion.tamnora.com/og-isei.webp"
+        image="https://fundacion.tamnora.com/image/og-isei.webp"
         url="https://fundacion.tamnora.com/isei"
       />
       

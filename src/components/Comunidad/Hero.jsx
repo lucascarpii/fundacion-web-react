@@ -45,7 +45,7 @@ export function Hero() {
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             transition={{ duration: 0.8, delay: 0, ease: 'easeInOut' }}
-            src="/comunidad_logo_enca.png" className='h-28 lg:h-40 mx-auto' alt="" />
+            src="/image/comunidad_logo_enca.png" className='h-28 lg:h-40 mx-auto' alt="" />
         </div>
         <div className="grid lg:grid-cols-2 mb-24 gap-6 lg:gap-20 place-items-center">
           <div className="max-w-2xl text-lg/7 text-gray-700">

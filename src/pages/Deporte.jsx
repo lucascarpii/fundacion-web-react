@@ -16,7 +16,7 @@ export function Deporte() {
       <MetaData
         title="Deporte - Fundación Neuquén Oeste | Transformando Comunidades"
         description="Descubre cómo el área de Deporte de Fundación Neuquén Oeste transforma comunidades a través de actividades deportivas que fomentan el crecimiento, la vida sana y los vínculos sociales en Neuquén."
-        image="https://fundacion.tamnora.com/og-deporte.webp"
+        image="https://fundacion.tamnora.com/image/og-deporte.webp"
         url="https://fundacion.tamnora.com/deporte"
       />
       

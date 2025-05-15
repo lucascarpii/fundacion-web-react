@@ -93,12 +93,12 @@ export const LatestArticles = () => {
 
           <div className="flex items-center justify-between mt-12">
             <button
-              className="rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm"
+              className={`rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm  ${currentPage === 1 ? 'text-gray-300 cursor-not-allowed' : 'text-black'}`}
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
             >
               <ArrowRightIcon className="rotate-180 size-5" />
-              Previous
+              Anterior
             </button>
 
             <div className="flex items-center justify-center space-x-2">
@@ -117,11 +117,11 @@ export const LatestArticles = () => {
             </div>
 
             <button
-              className="rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm"
+              className={`rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm  ${currentPage === totalPages ? 'text-gray-300 cursor-not-allowed' : 'text-black'}`}
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
             >
-              Next
+              Siguiente
               <ArrowRightIcon className="size-5" />
             </button>
           </div>
