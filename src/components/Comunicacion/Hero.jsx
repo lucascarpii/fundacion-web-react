@@ -16,7 +16,7 @@ export function Hero() {
       
       <div className="w-full max-w-screen-xl mx-auto px-6">
         <div className='w-full max-w-screen-xl min-h-[80dvh] flex flex-col-reverse xl:flex-row gap-10 justify-center xl:justify-between items-center mx-auto px-4 sm:px-6 '>
-          <h1 className="text-5xl sm:scale-110 sm:text-6xl md:text-7xl  lg:scale-100 lg:text-8xl font-light text-black">
+          <h1 className="text-center lg:text-start text-5xl sm:scale-110 sm:text-6xl md:text-7xl  lg:scale-100 lg:text-8xl font-light text-black">
             <motion.span
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

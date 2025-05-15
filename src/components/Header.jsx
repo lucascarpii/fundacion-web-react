@@ -80,7 +80,7 @@ export function Header({ theme = 'dark' }) {
       >
         <div className='flex items-center justify-between min-h-[90px] px-6'>
           <Link to="/">
-            <img className="w-[70px] object-cover" src="/fundacion_logo.png" alt="Logo" />
+            <img className="w-[70px] object-cover" src="/image/fundacion_logo.png" alt="Logo" />
           </Link>
           <MenuButton
             isOpen={isOpen}
