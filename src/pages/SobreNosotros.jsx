@@ -4,6 +4,8 @@ import { Pilares } from "../components/About/Pilares";
 import { Valores } from "../components/About/Valores";
 import { Footer } from "../components/Footer2";
 import { MetaData } from "../components/MetaData";
+import { ZonaRestaurativa } from "../components/About/ZonaRestaurativa";
+import { Nosotros } from "../components/About/Nosotros";
 
 
 export function SobreNosotros() {
@@ -17,11 +19,13 @@ export function SobreNosotros() {
       <MetaData
         title="Sobre Nosotros - Fundación Neuquén Oeste | Un Gran Ideal Construye un Mundo Mejor"
         description="Conoce la Fundación Neuquén Oeste, nuestros principios, visión, misión y valores. Desde 1998 trabajando por un mundo mejor a través de la educación y el compromiso comunitario en Neuquén."
-        image="https://fundacion.tamnora.com/og-sobre-nosotros.webp"
+        image="https://fundacion.tamnora.com/image/og-sobre-nosotros.webp"
         url="https://fundacion.tamnora.com/sobre-nosotros"
       />
       
       <Hero />
+      <ZonaRestaurativa />
+      <Nosotros />
       <div className="bg-isei-footer overflow-hidden">
         <Pilares />
         <Valores />

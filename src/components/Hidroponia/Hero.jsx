@@ -50,7 +50,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0, ease: 'easeInOut' }}
-            src="/hidroponia.png" className='w-44 md:w-80 mx-auto' alt="" />
+            src="/image/hidroponia.png" className='w-44 md:w-80 mx-auto' alt="" />
         </div>
         <div className="grid lg:grid-cols-2 mb-24 gap-6 lg:gap-20 place-items-center">
           <div className="text-balance max-w-2xl text-lg/7 text-gray-700">

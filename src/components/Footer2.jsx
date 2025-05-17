@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className="md:flex md:justify-between">
           <div className="mb-8 md:mb-0">
             <a href="/" className="flex gap-1 items-center">
-              <img src="/logo_blanco.png" className="mr-3 h-8" alt="Logo" />
+              <img src="/image/logo_blanco.png" className="mr-3 h-8" alt="Logo" />
               <span className="self-center text-white text-xl font-semibold whitespace-nowrap">Fundación Neuquen Oeste</span>
             </a>
             <div className="flex flex-col gap-3 mt-6 text-gray-400">
@@ -30,19 +30,19 @@ export const Footer = () => {
               <ul className="flex flex-col gap-4 text-gray-300">
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-isei-blue'></div>
-                  <a href="" className="hover:underline hover:text-white">
+                  <a href="/isei" className="hover:underline hover:text-white">
                     Isei
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-red-500'></div>
-                  <a href="" className="hover:underline hover:text-white">
+                  <a href="/colegio" className="hover:underline hover:text-white">
                     Colegio
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-orange-500'></div>
-                  <a href="" className="hover:underline hover:text-white">
+                  <a href="/deporte" className="hover:underline hover:text-white">
                     Deporte
                   </a>
                 </li>
@@ -50,19 +50,19 @@ export const Footer = () => {
               <ul className="flex flex-col gap-4 text-gray-300">
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-purple-500'></div>
-                  <a href="#" className="hover:underline hover:text-white">
+                  <a href="/mediacion" className="hover:underline hover:text-white">
                     Mediacion
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-yellow-500'></div>
-                  <a href="#" className="hover:underline hover:text-white">
+                  <a href="/comunidad" className="hover:underline hover:text-white">
                     Comunidad
                   </a>
                 </li>
                 <li className="flex items-center gap-2">
                   <div className='w-0.5 h-full bg-sky-500'></div>
-                  <a href="https://discord.gg/4eeurUVvTy" className="hover:underline hover:text-white">
+                  <a href="/comunicacion" className="hover:underline hover:text-white">
                     Comunicación
                   </a>
                 </li>

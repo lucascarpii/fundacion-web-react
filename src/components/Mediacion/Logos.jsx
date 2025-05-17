@@ -20,6 +20,9 @@ export function Logos() {
       
       <div className='absolute w-full h-full bg-gradient-to-b from-white via-transparent to-white'></div>
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32  lg:px-8 relative">
+        <div className="flex items-center justify-center mb-10">
+            <img src="/image/mediacion_logo_enca.png" className='h-28 md:h-40' alt="" />
+      </div>
         <motion.h2
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

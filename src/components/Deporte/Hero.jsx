@@ -47,7 +47,7 @@ export function Hero() {
           </div>
 
           <div className="hidden lg:flex items-center justify-end">
-            <img src="/deportes_logo_enca.png" className='h-28 md:h-40' alt="" />
+            <img src="/image/deportes_logo_enca.png" className='h-28 md:h-40' alt="" />
           </div>
         </div>
       </div>

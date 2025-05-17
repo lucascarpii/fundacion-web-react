@@ -78,7 +78,7 @@ export function Hero() {
         <iframe
           className="w-full relative aspect-video z-10"
           // Ajusta la ruta si tu video está en una carpeta pública, p.ej., /videos/30aniversario.mp4
-          src="/videos/30aniversario.mp4"
+          src="/video/30aniversario.mp4"
           title="Video Fundación Neuquén Oeste"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

@@ -13,6 +13,7 @@ export function Hero() {
           <rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
         </svg>
       </div>
+      <div className="w-full max-w-screen-xl min-h-[80dvh] flex flex-col-reverse xl:flex-row gap-10 justify-center xl:justify-between items-center mx-auto px-4 sm:px-6 ">
       <div className="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-0">
         <h1 className="text-4xl scale-110 sm:text-6xl md:text-7xl text-center lg:scale-100 lg:text-8xl font-light text-black">
           <motion.span
@@ -31,6 +32,8 @@ export function Hero() {
             por un <span className="font-medium bg-gradient-to-br from-colegio from-50% to-red-700 text-transparent bg-clip-text">futuro mejor</span>
           </motion.span>
         </h1>
+      </div>
+      <img src="/image/colegio_logo_enca.png" className='h-28 md:h-40' alt="" />
       </div>
     </section>
   )

@@ -25,7 +25,7 @@ export function Header({ theme = 'dark' }) {
   };
 
   const textColor = theme === 'dark' ? 'text-white' : 'text-black';
-  const logoSrc = theme === 'dark' ? '/logo_blanco.png' : '/fundacion_logo.png';
+  const logoSrc = theme === 'dark' ? '/image/logo_blanco.png' : '/image/fundacion_logo.png';
   const buttonColor = theme === 'dark' ? 'text-white border-white' : 'text-isei-dark border-isei-dark';
   const underlineColor = theme === 'dark' ? 'bg-white' : 'bg-isei-blue';
 
@@ -80,7 +80,7 @@ export function Header({ theme = 'dark' }) {
       >
         <div className='flex items-center justify-between min-h-[90px] px-6'>
           <Link to="/">
-            <img className="w-[70px] object-cover" src="/fundacion_logo.png" alt="Logo" />
+            <img className="w-[70px] object-cover" src="/image/fundacion_logo.png" alt="Logo" />
           </Link>
           <MenuButton
             isOpen={isOpen}

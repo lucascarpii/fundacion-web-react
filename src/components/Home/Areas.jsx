@@ -2,12 +2,12 @@ import React from 'react';
 import { AreaItem } from './AreaItem';
 
 const areas = [
-  { src: "/colegio", image: "/index_logo_colegio.png", alt: "Colegio", gradient: "from-red-400 to-red-500" },
-  { src: "/isei", image: "/index_logo_isei.png", alt: "ISEI", gradient: "from-isei-teal to-isei-teal" },
-  { src: "/deporte", image: "/index_logo_deporte.png", alt: "Deporte", gradient: "from-orange-400 to-orange-500" },
-  { src: "/comunicacion", image: "/index_logo_comunicacion.png", alt: "Comunicación", gradient: "from-sky-400 to-sky-500" },
-  { src: "/comunidad", image: "/index_logo_comunidad.png", alt: "Comunidad", gradient: "from-yellow-400 to-yellow-500" },
-  { src: "/mediacion", image: "/index_logo_mediacion.png", alt: "Mediación", gradient: "from-purple-400 to-purple-500" },
+  { src: "/colegio", image: "/image/index_logo_colegio.png", alt: "Colegio", gradient: "from-red-400 to-red-500" },
+  { src: "/isei", image: "/image/index_logo_isei.png", alt: "ISEI", gradient: "from-isei-teal to-isei-teal" },
+  { src: "/deporte", image: "/image/index_logo_deporte.png", alt: "Deporte", gradient: "from-orange-400 to-orange-500" },
+  { src: "/comunicacion", image: "/image/index_logo_comunicacion.png", alt: "Comunicación", gradient: "from-sky-400 to-sky-500" },
+  { src: "/comunidad", image: "/image/index_logo_comunidad.png", alt: "Comunidad", gradient: "from-yellow-400 to-yellow-500" },
+  { src: "/mediacion", image: "/image/index_logo_mediacion.png", alt: "Mediación", gradient: "from-purple-400 to-purple-500" },
 ];
 
 export function Areas() {

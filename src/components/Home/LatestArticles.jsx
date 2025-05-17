@@ -68,6 +68,15 @@ export const LatestArticles = () => {
     setCurrentPage(page);
   };
 
+  useEffect(() => {
+  const section = document.getElementById("last-news");
+  if (section) {
+    const yOffset = -80; // ajustar según la altura de tu navbar
+    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  }
+}, [currentPage]);
+
   return (
     <div className="max-w-screen-xl mx-auto px-4 pt-8 pb-20">
       <h2 className="text-4xl mb-6">Últimas noticias</h2>
@@ -75,7 +84,7 @@ export const LatestArticles = () => {
         <p className="text-gray-500 text-center">No hay noticias disponibles en este momento.</p>
       ) : (
         <>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div id="last-news" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {paginatedArticles.map((article) => (
               <Link to={`/noticias/${article.idEncoded}`} key={article.id} className="flex flex-col">
                 <div
@@ -93,12 +102,12 @@ export const LatestArticles = () => {
 
           <div className="flex items-center justify-between mt-12">
             <button
-              className="rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm"
+              className={`rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm  ${currentPage === 1 ? 'text-gray-300 cursor-not-allowed' : 'text-black'}`}
               onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
               disabled={currentPage === 1}
             >
               <ArrowRightIcon className="rotate-180 size-5" />
-              Previous
+              Anterior
             </button>
 
             <div className="flex items-center justify-center space-x-2">
@@ -117,11 +126,11 @@ export const LatestArticles = () => {
             </div>
 
             <button
-              className="rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm"
+              className={`rounded-full border px-4 py-2.5 font-medium flex items-center justify-center gap-2 w-32 text-sm  ${currentPage === totalPages ? 'text-gray-300 cursor-not-allowed' : 'text-black'}`}
               onClick={() => setCurrentPage((prev) => Math.min(prev + 1, totalPages))}
               disabled={currentPage === totalPages}
             >
-              Next
+              Siguiente
               <ArrowRightIcon className="size-5" />
             </button>
           </div>

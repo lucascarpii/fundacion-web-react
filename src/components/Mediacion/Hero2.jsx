@@ -30,9 +30,9 @@ export function Hero2() {
             </defs>
           </motion.svg>
           <div
-            className="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left"
+            className=" mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left"
           >
-            <h1 className="text-5xl md:text-6xl text-nowrap text-center md:text-start lg:text-[65px] text-white">
+            <h1 className="text-5xl md:text-6xl lg:text-nowrap text-center md:text-start lg:text-[65px] text-white">
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -66,7 +66,7 @@ export function Hero2() {
           >
             <img
               alt="App screenshot"
-              src="/enca_mediacion.jpg"
+              src="/image/enca_mediacion.jpg"
               width={1824}
               height={1080}
               className="w-full aspect-video lg:aspect-[5/3.5] object-cover max-w-lg rounded-2xl bg-white/5 ring-4 ring-white/10"

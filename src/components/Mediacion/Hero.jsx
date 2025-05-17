@@ -21,7 +21,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0, ease: 'easeInOut' }}
           className='p-1.5 bg-gradient-to-br from-mediacion to-mediacion/30 xl:-ms-20 h-fit lg:my-auto'>
-          <img src="/enca_mediacion.jpg" className='lg:aspect-[4/3] lg:w-96 object-cover shadow-xl' alt="" />
+          <img src="/image/enca_mediacion.jpg" className='lg:aspect-[4/3] lg:w-96 object-cover shadow-xl' alt="" />
         </motion.div>
         <div className='flex flex-col items-center md:items-start gap-6 lg:col-span-2 justify-center'>
           <h1 className="text-5xl md:text-6xl text-center md:text-start lg:text-[65px] xl:text-[80px] font-light text-black">
