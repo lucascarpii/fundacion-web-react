@@ -26,14 +26,13 @@ export function Hero() {
       </svg>
       <div className='absolute w-full h-full lg:bg-hero-radial-gradient'></div>
 
-      <div className='max-w-2xl lg:max-w-screen-xl mx-auto pt-24 pb-20 lg:py-28 flex flex-col justify-center lg:grid px-6 sm:px-8 xl:px-0 lg:grid-cols-5 min-h-dvh gap-4 xl:gap-10'>
+      <div className='max-w-2xl lg:max-w-screen-xl mx-auto pt-24 lg:pt-28 flex flex-col justify-center lg:grid px-6 sm:px-8 xl:px-0 lg:grid-cols-5 gap-4 xl:gap-10'>
         <div className="h-fit lg:h-full flex flex-col justify-center z-10 col-span-1 lg:col-span-3 gap-8 lg:gap-10">
           {/* Título Principal H1 - Se mantiene */}
-          <h1 className="text-5xl sm:text-7xl lg:text-7xl xl:text-8xl flex flex-col font-light text-title-black">
+          <h1 className="text-5xl sm:text-7xl lg:text-7xl xl:text-8xl flex flex-col text-title-black">
             <span>
-              Un <span className="font-medium text-isei-blue ">gran ideal</span>
+              Zona
             </span>
-            <span>construye un</span>
             <motion.span
               className="px-2 lg:px-2 lg:pe-3 w-fit pb-1 lg:pb-3 mt-2 lg:mt-3 font-medium"
               initial={{
@@ -45,16 +44,14 @@ export function Hero() {
               animate={{ backgroundPosition: '0% 0', color: '#ffffffff' }}
               transition={{ duration: 1.2, ease: 'backOut' }}
             >
-              mundo mejor
+              Restaurativa
             </motion.span>
           </h1>
 
-          <article className="text-lg space-y-4 sm:text-lg/7 text-gray-700 max-w-xl text-pretty">
+          <article className="text-xl space-y-4 text-gray-700 max-w-xl text-pretty">
+            <strong>¿Qué es una zona restaurativa?</strong>
             <p>
-            Desde <strong> 1986</strong>, la Fundación Neuquén Oeste acompaña el desarrollo de las personas en la Ciudad de Neuquén promoviendo valores para la transformación social. En <strong>2005</strong>, abrimos el Colegio Neuquén Oeste de <strong>Nivel Medio para adultos</strong>, brindando oportunidades a quienes quedaron fuera del sistema educativo.
-            </p>
-            <p>
-              Finalmente, y por la <strong>gran demanda</strong> de las propias familias de la zona, se incorporaron otras <strong>propuestas educativas</strong> de nivel inicial a terciario y expandimos nuestras áreas de acción, consolidándonos como una <strong>institución comprometida</strong> con la comunidad.
+              Entendemos por zona restaurativa a <strong>un espacio</strong> donde las personas que lo construyen cotidianamente adoptan el enfoque de las <strong>Prácticas Restaurativas</strong> para consolidar un sentido de comunidad a través del <strong>respeto</strong>, el <strong>diálogo</strong> y los <strong>procesos justos</strong>.
             </p>
           </article>
 

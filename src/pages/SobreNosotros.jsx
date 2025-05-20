@@ -4,6 +4,7 @@ import { Pilares } from "../components/About/Pilares";
 import { Valores } from "../components/About/Valores";
 import { Footer } from "../components/Footer2";
 import { MetaData } from "../components/MetaData";
+import { History } from "../components/About/History";
 import { ZonaRestaurativa } from "../components/About/ZonaRestaurativa";
 import { Nosotros } from "../components/About/Nosotros";
 
@@ -22,10 +23,11 @@ export function SobreNosotros() {
         image="https://fundacion.tamnora.com/image/og-sobre-nosotros.webp"
         url="https://fundacion.tamnora.com/sobre-nosotros"
       />
-      
+
       <Hero />
-      <ZonaRestaurativa />
-      <Nosotros />
+      {/* <ZonaRestaurativa /> */}
+      {/* <Nosotros /> */}
+      <History />
       <div className="bg-isei-footer overflow-hidden">
         <Pilares />
         <Valores />
