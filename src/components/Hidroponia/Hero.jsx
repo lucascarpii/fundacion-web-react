@@ -99,10 +99,14 @@ export function Hero() {
       </div>
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" controls autoPlay loop>
-          <source src="/video/huerta_hidroponica.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <iframe
+          className="w-full relative aspect-video z-10"
+          // Ajusta la ruta si tu video está en una carpeta pública, p.ej., /videos/30aniversario.mp4
+          src="/video/huerta_hidroponica.mp4"
+          title="Video Fundación Neuquén Oeste"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
       </Modal>
     </section>
   )

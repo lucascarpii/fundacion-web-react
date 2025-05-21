@@ -9,6 +9,7 @@ export function NivelPrimario() {
       <div className='flex flex-col xl:flex-row justify-between items-start gap-10'>
         {/* Columna de Texto Principal */}
         <div className='max-w-3xl xl:max-w-2xl'>
+          
           <h2 className='text-4xl mb-10 text-center lg:text-left'>
             Nivel Inicial y Primario
           </h2>
@@ -32,18 +33,20 @@ export function NivelPrimario() {
               <strong>Resolución de conflictos</strong> a través del <strong>diálogo respetuoso</strong> enmarcado en la filosofía institucional de <strong>Prácticas Restaurativas y Mediación Escolar</strong>.
             </li>
           </ul>
-          <button className='mt-6 w-full sm:w-auto' >
+          {/* <button className='mt-6 w-full sm:w-auto' >
             <a className='bg-red-500 flex items-center justify-center sm:block hover:bg-red-700 px-6 py-3 rounded-xl rounded-tl-none text-white' href='https://docs.google.com/forms/d/e/1FAIpQLScWh6bnNlGU1Unnobjxua4_je1MYOzIkYf1D4oG3Aa4P8I6Qw/closedform'>
               Pre-Inscripciones 2025
             </a>
-          </button>
+          </button> */}
         </div>
 
         {/* Columna de Cita (se mantiene) */}
-        <div className="bg-isei-footer rounded-3xl rounded-tr-none px-6 py-6 md:py-8 lg:py-12 flex flex-col gap-4 relative overflow-hidden max-w-screen-xl mx-auto">
+        <div className="bg-isei-footer rounded-3xl rounded-tr-none   flex flex-col gap-4 relative overflow-hidden max-w-screen-xl mx-auto">
+          <img class="rounded-lg w-full h-full object-cover mask-fade-b" src="/image/PRIMARIO.webp" alt="" />
           <div className="absolute h-2/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
           <div className="absolute h-80 aspect-square rounded-full bg-colegio -right-40 top-2 blur-[100px] "></div>
-          <figure className="mx-auto max-w-screen-md text-center z-10">
+          
+          <figure className="mx-auto max-w-screen-md text-center z-10 md:py-8 lg:py-12 px-6 py-6">
             <svg className="size-8 mx-auto mb-8 text-white/50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>

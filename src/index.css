@@ -13,3 +13,24 @@ body {
   height: 100%;
   scroll-behavior: smooth;
 }
+
+@layer utilities {
+  .mask-fade {
+    -webkit-mask-image: linear-gradient(
+      to top,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,0) 100%
+    );
+    mask-image: linear-gradient(
+      to top,
+      rgba(0,0,0,1) 0%,
+      rgba(0,0,0,0) 100%
+    );
+  }
+  
+  /* Variantes de dirección */
+  .mask-fade-t { mask-image: linear-gradient(to top, #000 0%, transparent 100%); }
+  .mask-fade-b { mask-image: linear-gradient(to bottom, #000 0%, transparent 100%); }
+  .mask-fade-l { mask-image: linear-gradient(to left, #000 0%, transparent 100%); }
+  .mask-fade-r { mask-image: linear-gradient(to right, #000 0%, transparent 100%); }
+}

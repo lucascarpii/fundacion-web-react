@@ -7,17 +7,14 @@ export function Valores() {
 
           </div>
 
- <div className="text-white max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0  mb-12">  
+ <div className="text-white max-w-screen-xl mx-auto sm:px-8 xl:px-0  mb-12">  
     <div className="flex flex-col gap-8 w-full relative z-20 mt-4">
       <p className="text-xl text-white/50 leading-relaxed tracking-wide text-balance">
           En ese camino de crecimiento y consolidación institucional, creamos el Colegio Neuquén Oeste para adultos, una propuesta educativa que continuó su expansión hacia los niveles<span className="text-white"> inicial, primario y secundario</span>, promoviendo una formación académica sólida, con un fuerte anclaje en valores humanos, el desarrollo emocional y la participación activa de las familias. El colegio es una pieza clave en nuestra visión de construir comunidades educativas que acompañen a las infancias y juventudes en su desarrollo integral.
       </p>    
     </div>
-
-    
-
 </div>
-<div className="text-white/50 max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0 z-20">
+<div className="text-white/50 max-w-screen-xl mx-auto  sm:px-8 xl:px-0 z-20">
    <p className="text-xl ">
           Además, impulsamos otras propuestas formativas que responden a las necesidades actuales de nuestra sociedad:
         </p>
@@ -29,12 +26,12 @@ export function Valores() {
         </ul>
 </div>
 
-<div className="max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0 z-20 py-10 text-center">
+<div className="max-w-screen-xl mx-auto  sm:px-8 xl:px-0 z-20 py-10 text-center">
 <p className="text-white/90 text-2xl tracking-wide mt-10 z-20">
           Cada paso que damos está guiado por nuestra misión:
         </p>
         <p className=" text-[#d0f500] text-2xl italic tracking-wide z-20">
-           "Construir una sociedad más justa, solidaria y consciente, donde cada persona pueda desplegar su potencial y encontrar un lugar para crecer junto a otros.""
+           "Construir una sociedad más justa, solidaria y consciente, donde cada persona pueda desplegar su potencial y encontrar un lugar para crecer junto a otros."
         </p>
 </div>
 
