@@ -3,12 +3,15 @@ export const Pilares = () => {
     <section className="relative min-h-dvh text-white pt-32 pb-20">
       <div className="w-2/12 aspect-square rounded-full bg-[#d0f502]/40 absolute top-44 right-32 blur-[150px]"></div>
       <div className="w-4/12 aspect-square rounded-full bg-indigo-600 absolute top-[30rem] right-[20rem] blur-[300px]"></div>
-      <div className="max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex flex-col">
+          <div className="max-w-screen-xl mx-auto mb-8">
           <h2 className="text-4xl md:text-6xl/tight max-w-lg bg-gradient-to-br from-white from-40% h-fit to-white/40 inline-block text-transparent bg-clip-text">
             Sobre <span className="text-[#d0f500]">Nosotros</span>
           </h2>
-          <img src="/acompañar.jpg" alt="" className="h-full w-4/5 mt-8 object-cover rounded-2xl"/>
+
+          </div>
+      <div className="max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="flex flex-col">
+          <img src="/image/acompañar.jpg" alt="" className="h-full w-4/5  object-cover rounded-2xl"/>
         </div>
 
         <div className="flex flex-col gap-8 w-full relative z-20 mt-4">

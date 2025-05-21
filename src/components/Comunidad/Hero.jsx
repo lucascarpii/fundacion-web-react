@@ -64,9 +64,9 @@ export function Hero() {
             <p className='mt-4'>Es por ello que además de los espacios educativos y deportivos, se les brinda la posibilidad de participar de charlas informativas sobre temas de su interés orientadas a la prevención y ayuda escolar.</p>
             <ul className="flex gap-6 items-center flex-col md:flex-row justify-between pt-8 md:py-4">
               <li>
-                <a href="mailto:fundacionnqnoeste@gmail.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-yellow-600 transition-colors">
+                <a href="mailto:contacto@fundacionnqnoeste.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-yellow-600 transition-colors">
                   <MailIcon className="size-7" />
-                  <span className="text-lg md:text-base font-medium">fundacionnqnoeste@gmail.com</span>
+                  <span className="text-lg md:text-base font-medium">contacto@fundacionnqnoeste.com</span>
                 </a>
               </li>
             </ul>

@@ -31,7 +31,7 @@ export function Mentes() {
           </p>
           <div className="flex space-x-4 mt-6">
             <a
-              href="mailto:fundacionnqnoeste@gmail.com"
+              href="mailto:contacto@fundacionnqnoeste.com"
               className="flex text-sm items-center gap-2 px-2 py-1 bg-isei-blue text-white font-medium rounded-md hover:bg-isei-dark"
             >
               <MailIcon className="size-6" /> Correo electrónico

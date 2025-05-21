@@ -27,9 +27,9 @@ export function CPREM() {
         </div>
       </div>
       <div className="flex flex-col-reverse gap-4 sm:flex-row-reverse items-center justify-between max-w-screen-md mx-auto mt-16 py-4 px-4">
-        <a href="mailto:fundacionnqnoeste@gmail.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-[#b15dd6] transition-colors">
+        <a href="mailto:contacto@fundacionnqnoeste.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-[#b15dd6] transition-colors">
           <MailIcon className="size-7" />
-          <span className="text-lg md:text-base font-medium">fundacionnqnoeste@gmail.com</span>
+          <span className="text-lg md:text-base font-medium">contacto@fundacionnqnoeste.com</span>
         </a>
         <div className="text-center font-medium text-lg text-gray-700 mt-4 sm:mt-0">
           Lunes a viernes de <span className="bg-[#b15dd6] text-white px-2 py-1">9 a 13 hs</span>

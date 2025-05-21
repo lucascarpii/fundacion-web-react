@@ -20,6 +20,7 @@ export default {
       },
       backgroundImage: {
         'hero-image': "url('/image/cultivando-comunidad.webp')",
+        'huerta-image': "url('/image/huerta.webp')",
         'accompany': "url('/image/acompañar.jpg')",
         'igualdad': "url('/image/igualdad.webp')",
         'compasion': "url('/image/compasion.webp')",

@@ -14,7 +14,7 @@ export const Footer = () => {
             </a>
             <div className="flex flex-col gap-3 mt-6 text-gray-400">
               <a href="tel:+542994469745" target='_blank' className="flex items-center">
-                <PhoneIcon className="mr-2" /> (0299) 4469745
+                <PhoneIcon className="mr-2" /> 2995370159
               </a>
               <a href="mailto:contacto@fundacionnqnoeste.com" target='_blank' className="flex items-center">
                 <MailIcon className="mr-2" /> contacto@fundacionnqnoeste.com

@@ -1,8 +1,15 @@
 import { motion } from 'framer-motion'
 import { MailIcon } from "../../icons/MailIcon";
 import { FileTypePDF } from '../../icons/FileTypePDF';
+import { useState } from 'react';
+import { Modal } from '../ui/Modal'; // Asegúrate que la ruta al componente Modal sea correcta
+
 
 export function Hero() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <section className="flex items-center justify-center relative">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -52,6 +59,24 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0, ease: 'easeInOut' }}
             src="/image/hidroponia.png" className='w-44 md:w-80 mx-auto' alt="" />
         </div>
+
+
+        <div className="w-full h-[500px] bg-cover bg-center flex items-center justify-center  relative rounded-3xl overflow-hidden bg-huerta-image mb-10">
+          <div className="absolute inset-0 bg-black/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
+          <button className="z-10 flex flex-col justify-center gap-2 items-center hover:scale-105 transition-transform duration-300" onClick={openModal}>
+            <div className="bg-lime-200 aspect-square text-lime-600 flex items-center justify-center w-16 rounded-full" >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
+                <path fillRule="evenodd" d="M4.5 5.653c0-1.427 1.529-2.33 2.779-1.643l11.54 6.347c1.295.712 1.295 2.573 0 3.286L7.28 19.99c-1.25.687-2.779-.217-2.779-1.643V5.653Z" clipRule="evenodd" />
+              </svg>
+            </div>
+            <span className="text-white">Ver video</span>
+          </button>
+        </div>
+
+        
+
+
         <div className="grid lg:grid-cols-2 mb-24 gap-6 lg:gap-20 place-items-center">
           <div className="text-balance max-w-2xl text-lg/7 text-gray-700">
             <p className="">
@@ -62,6 +87,7 @@ export function Hero() {
             </p>
           </div>
 
+
           <div className="text-pretty flex flex-col justify-between max-w-2xl text-lg/7 text-gray-700">
             <p className="">
               Este invernadero se convierte en un <strong>laboratorio vivo</strong>, donde los estudiantes del Colegio Neuquén Oeste y la comunidad pueden experimentar de manera directa el ciclo de crecimiento, desde la siembra hasta la cosecha.
@@ -71,6 +97,13 @@ export function Hero() {
           </div>
         </div>
       </div>
+
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        <video class="w-full h-auto max-w-full border border-gray-200 rounded-lg dark:border-gray-700" controls autoPlay loop>
+          <source src="/video/huerta_hidroponica.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </Modal>
     </section>
   )
 }

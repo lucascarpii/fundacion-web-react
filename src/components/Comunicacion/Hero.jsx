@@ -22,7 +22,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0 }}
             >
-              Compartir y difundir
+              Ampliamos voces,
             </motion.span>
             <br />
             <motion.span
@@ -30,7 +30,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0.2 }}
             >
-              un mensaje de<span className="font-normal bg-gradient-to-br from-comunicacion from-50% to-sky-700 text-transparent bg-clip-text"> esperanza</span>
+              compartimos<span className="font-normal bg-gradient-to-br from-comunicacion from-50% to-sky-700 text-transparent bg-clip-text"> ideas</span>
             </motion.span>
           </h1>
           <img src="/image/comunicacion_logo_enca.png" className='h-28 md:h-40' alt="" />

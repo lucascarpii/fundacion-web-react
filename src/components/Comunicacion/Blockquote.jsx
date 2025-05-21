@@ -13,9 +13,9 @@ export function Blockquote() {
             </a>
           </li>
           <li>
-            <a href="mailto:fundacionnqnoeste@gmail.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-comunicacion transition-colors">
+            <a href="mailto:contacto@fundacionnqnoeste.com" className="flex hover:underline underline-offset-4 items-center gap-3 text-isei-nav hover:text-comunicacion transition-colors">
               <MailIcon className="size-7" />
-              <span className="text-lg md:text-base font-medium">fundacionnqnoeste@gmail.com</span>
+              <span className="text-lg md:text-base font-medium">contacto@fundacionnqnoeste.com</span>
             </a>
           </li>
         </ul> */}
