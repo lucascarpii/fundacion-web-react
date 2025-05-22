@@ -16,21 +16,130 @@ body {
 
 @layer utilities {
   .mask-fade {
-    -webkit-mask-image: linear-gradient(
-      to top,
-      rgba(0,0,0,1) 0%,
-      rgba(0,0,0,0) 100%
-    );
-    mask-image: linear-gradient(
-      to top,
-      rgba(0,0,0,1) 0%,
-      rgba(0,0,0,0) 100%
-    );
+    -webkit-mask-image: linear-gradient(to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to top,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 100%);
   }
-  
+
   /* Variantes de dirección */
-  .mask-fade-t { mask-image: linear-gradient(to top, #000 0%, transparent 100%); }
-  .mask-fade-b { mask-image: linear-gradient(to bottom, #000 0%, transparent 100%); }
-  .mask-fade-l { mask-image: linear-gradient(to left, #000 0%, transparent 100%); }
-  .mask-fade-r { mask-image: linear-gradient(to right, #000 0%, transparent 100%); }
+  .mask-fade-t {
+    mask-image: linear-gradient(to top, #000 0%, transparent 100%);
+  }
+
+  .mask-fade-b {
+    mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+  }
+
+  .mask-fade-l {
+    mask-image: linear-gradient(to left, #000 0%, transparent 100%);
+  }
+
+  .mask-fade-r {
+    mask-image: linear-gradient(to right, #000 0%, transparent 100%);
+  }
+
+  .mask-fade-tl {
+    mask-image: linear-gradient(to top left, #000 0%, transparent 100%);
+  }
+
+  .mask-fade-tr {
+    mask-image: linear-gradient(to top right, #000 0%, transparent 100%);
+  }
+
+  .mask-fade-bl {
+    mask-image: linear-gradient(to bottom left, #000 0%, transparent 100%);
+  }
+
+  .mask-fade-br {
+    mask-image: linear-gradient(to bottom right, #000 0%, transparent 100%);
+  }
+
+  /* 50% de transparencia */
+  .mask-fade-t-50 {
+    mask-image: linear-gradient(to top, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-b-50 {
+    mask-image: linear-gradient(to bottom, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-l-50 {
+    mask-image: linear-gradient(to left, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-r-50 {
+    mask-image: linear-gradient(to right, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-tl-50 {
+    mask-image: linear-gradient(to top left, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-tr-50 {
+    mask-image: linear-gradient(to top right, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-bl-50 {
+    mask-image: linear-gradient(to bottom left, #000 50%, transparent 100%);
+  }
+
+  .mask-fade-br-50 {
+    mask-image: linear-gradient(to bottom right, #000 50%, transparent 100%);
+  }
+
+  /* 25% de transparencia */
+  .mask-fade-l-25 {
+    mask-image: linear-gradient(to left, #000 25%, transparent 100%);
+  }
+
+  .mask-fade-r-25 {
+    mask-image: linear-gradient(to right, #000 25%, transparent 100%);
+  }
+  .mask-fade-t-25 {
+    mask-image: linear-gradient(to top, #000 25%, transparent 100%);
+  }
+  .mask-fade-b-25 {
+    mask-image: linear-gradient(to bottom, #000 25%, transparent 100%);
+  }
+
+  .mask-fade-tl-25 {
+    mask-image: linear-gradient(to top left, #000 25%, transparent 100%);
+  }
+
+  .mask-fade-tr-25 {
+    mask-image: linear-gradient(to top right, #000 25%, transparent 100%);
+  }
+
+  .mask-fade-bl-25 {
+    mask-image: linear-gradient(to bottom left, #000 25%, transparent 100%);
+  }
+
+  .mask-fade-br-25 {
+    mask-image: linear-gradient(to bottom right, #000 25%, transparent 100%);
+  }
+
+  .mask-fade-y-25 {
+  --mask-stop: 25%;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    #000 var(--mask-stop),
+    #000 calc(100% - var(--mask-stop)),
+    transparent 100%
+  );
+}
+
+.mask-fade-x-25 {
+  --mask-stop: 25%;
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    #000 var(--mask-stop),
+    #000 calc(100% - var(--mask-stop)),
+    transparent 100%
+  );
+}
 }

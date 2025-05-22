@@ -42,9 +42,9 @@ export function NivelPrimario() {
 
         {/* Columna de Cita (se mantiene) */}
         <div className="bg-isei-footer rounded-3xl rounded-tr-none   flex flex-col gap-4 relative overflow-hidden max-w-screen-xl mx-auto">
-          <img class="rounded-lg w-full h-full object-cover mask-fade-b" src="/image/PRIMARIO.webp" alt="" />
-          <div className="absolute h-2/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
-          <div className="absolute h-80 aspect-square rounded-full bg-colegio -right-40 top-2 blur-[100px] "></div>
+          <img class="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/primario.webp" alt="" />
+          <div className="absolute h-1/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
+          <div className="absolute h-80 aspect-square rounded-full bg-colegio -right-40 bottom-12 blur-[100px] "></div>
           
           <figure className="mx-auto max-w-screen-md text-center z-10 md:py-8 lg:py-12 px-6 py-6">
             <svg className="size-8 mx-auto mb-8 text-white/50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">

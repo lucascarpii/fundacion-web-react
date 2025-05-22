@@ -23,18 +23,19 @@ export function NivelSecundario() {
           {/* --- Fin del Nuevo Contenido --- */}
 
           {/* Botón de Pre-Inscripciones (se mantiene) */}
-          <button className='mt-6 w-full sm:w-auto'> {/* Margen superior ajustado */}
+          {/* <button className='mt-6 w-full sm:w-auto'> 
             <a className='flex items-center justify-center sm:block bg-teal-500 hover:bg-teal-700 px-6 py-3 rounded-xl rounded-tl-none text-white' href="https://docs.google.com/forms/d/e/1FAIpQLSeYZzEEwJwVF84RZb1hHBSRHU11-G8LjMRsUyVU_wV1frf4uw/closedform">
               Pre-Inscripciones 2025
             </a>
-          </button>
+          </button> */}
         </div>
 
         {/* Columna de Cita (Directora actualizada) */}
-        <div className="bg-isei-footer rounded-xl px-6 py-6 md:py-8 lg:py-24 flex flex-col gap-4 relative overflow-hidden max-w-screen-xl mx-auto">
-          <div className="absolute h-2/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
-          <div className="absolute h-80 aspect-square rounded-full bg-isei-teal -right-40 top-2 blur-[100px] "></div>
-          <figure className="mx-auto max-w-screen-md text-center z-10">
+        <div className="bg-isei-footer rounded-xl w-full flex flex-col gap-4 relative overflow-hidden max-w-screen-xl mx-auto">
+          <img class="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/secundario_estudiantes.webp" alt="" />
+          <div className="absolute h-1/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
+          <div className="absolute h-80 aspect-square rounded-full bg-isei-teal -right-40 bottom-24 blur-[100px] "></div>
+          <figure className="mx-auto max-w-screen-xl px-6 py-6 md:py-8 lg:py-24 text-center z-10">
             <svg className="size-8 mx-auto mb-8 text-white/50" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>

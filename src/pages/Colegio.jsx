@@ -25,6 +25,7 @@ export function Colegio() {
       <Hero />
       <NivelPrimario />
       <NivelSecundario />
+      <img class="-mt-44 w-full h-full object-cover mask-fade-y-25 " src="/image/secundario_externo.webp" alt="" />
       <SecundarioAdultos />
       <Footer />
     </>
