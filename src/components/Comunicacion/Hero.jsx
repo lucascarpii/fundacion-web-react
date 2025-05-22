@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { RadioPlayer } from '../RadioPlayer'
 
 export function Hero() {
   return (
@@ -41,11 +42,13 @@ export function Hero() {
             <p className="text-pretty">
               Desde el área de Comunicación trabajamos al servicio de la comunidad, acercando la voz, los proyectos y el espíritu de la Fundación. Generamos contenidos accesibles y significativos que fortalecen los vínculos, promueven la participación y reflejan nuestro compromiso con la transformación social.
             </p>
-            
+            <div className="flex justify-center lg:justify-start items-center mt-6">
+            <RadioPlayer />
+            </div>
           </div>
 
 
-          <div className="hidden lg:flex items-center justify-end  relative z-20">
+          <div className="flex items-center justify-end  relative z-20">
             <img src="/image/enca_comunicacion.webp" className='w-full aspect-video object-cover rounded-3xl rounded-br-none shadow-2xl' alt="" />
           </div>
         </div>
