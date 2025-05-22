@@ -39,11 +39,9 @@ export function Hero() {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 mb-24 -mt-10 relative">
           <div className="lg:max-w-2xl text-lg/8 text-gray-700 relative z-20">
             <p className="text-pretty">
-              A través de la utilización de nuestros equipos de radio, televisión y blogs se busca elaborar un mensaje de <strong>paz</strong>, <strong>amor</strong> y <strong>acompañamiento</strong> para dar sentido a la vida y transitarla con alegría. Esto nos motiva a seguir construyendo una comunidad ligada al <strong>positivismo</strong> y <strong>buenas relaciones</strong> para vivir mejor en sociedad.
+              Desde el área de Comunicación trabajamos al servicio de la comunidad, acercando la voz, los proyectos y el espíritu de la Fundación. Generamos contenidos accesibles y significativos que fortalecen los vínculos, promueven la participación y reflejan nuestro compromiso con la transformación social.
             </p>
-            <p className="mt-6 text-pretty">
-              El área de comunicación juega un <strong>rol fundamental</strong> para contar, desde la Fundación hacia el exterior, lo que allí dentro ocurre y los <strong>principios</strong> en los que se basa, poniendo primeramente el <strong>respeto</strong> y el <strong>amor hacia el otro</strong>, con un mensaje dirigido a <strong>todas las personas</strong>.
-            </p>
+            
           </div>
 
 

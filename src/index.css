@@ -142,4 +142,47 @@ body {
     transparent 100%
   );
 }
+
+.mask-fade-radial {
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.mask-fade-radial-t {
+  mask-image: radial-gradient(
+    circle at top,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.mask-fade-radial-b {
+  mask-image: radial-gradient(
+    circle at bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.mask-fade-radial-l {
+  mask-image: radial-gradient(
+    circle at left,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.mask-fade-radial-r {
+  mask-image: radial-gradient(
+    circle at right,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+
+
 }

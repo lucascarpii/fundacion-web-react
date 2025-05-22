@@ -35,7 +35,7 @@ export function Hero() {
             </motion.span>
           </h1>
           <div className='flex flex-col sm:flex-row gap-4 items-center mt-10'>
-            <motion.a
+            {/* <motion.a
               href='https://campusvirtualisei.com/'
               target='_blank'
               initial={{ opacity: 0 }}
@@ -43,7 +43,7 @@ export function Hero() {
               transition={{ duration: 0.5, delay: 0.4 }}
               className='w-full sm:w-auto justify-center select-none cursor-pointer flex items-center gap-4 bg-isei-blue border-2 border-isei-blue transition-colors duration-200 hover:border-isei-dark text-white hover:bg-isei-dark px-6 py-3 rounded-lg'>
               Ir al campus virtual <LinkIcon />
-            </motion.a>
+            </motion.a> */}
           
           </div>
         </div>

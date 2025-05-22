@@ -29,9 +29,7 @@ export function Blockquote() {
           </svg>
           <blockquote>
             <p className="text-white text-center text-lg md:text-xl italic text-balance">
-              “Nuestro propósito es llevar el mensaje de la Fundación 
-              <br className="hidden md:block" />
-              a cada persona, a cada familia, a cada lugar”
+              “Nuestro propósito es llevar el mensaje de la Fundación <br className="hidden md:block " /> a cada persona, a cada familia, a cada lugar”
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-10 space-x-3">

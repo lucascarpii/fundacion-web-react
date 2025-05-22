@@ -34,7 +34,7 @@ export function Hero() {
         </h1>
         </div>
         <div className="grid lg:grid-cols-3 mb-24">
-          <div className="lg:max-w-3xl text-lg lg:col-span-2 text-gray-700">
+          <div className="lg:max-w-3xl text-lg lg:col-span-2 text-gray-700 z-20">
             <p className="mt-4 text-pretty">
               Diariamente se desarrollan diversas <strong>actividades deportivas</strong> con el objetivo de favorecer el crecimiento y fortalecer habilidades para la vida, como también el ejercicio del <strong>compañerismo y la vida sana</strong> en los niños y jóvenes.
             </p>

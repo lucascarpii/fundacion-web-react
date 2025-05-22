@@ -15,7 +15,7 @@ export function Blockquote() {
           </blockquote>
           <figcaption className="flex items-center justify-center mt-10 space-x-3">
             <div className="flex flex-col md:flex-row items-center md:divide-x divide-zinc-500">
-              <cite className="md:pr-3 font-medium text-zinc-200">Patricia Trilla.</cite>
+              <cite className="md:pr-3 font-medium text-zinc-200">Patricia Trillo.</cite>
               <cite className="md:pl-3 text-sm text-white/60">Coordinadora área Comunidad</cite>
             </div>
           </figcaption>

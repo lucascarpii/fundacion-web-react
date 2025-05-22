@@ -21,6 +21,9 @@ export function Comunidad() {
 
      
       <Hero />
+       <section className="-mt-20 lg:-mt-44 flex items-center justify-center relative mb-5">
+        <img class="w-full h-full object-cover object-center mask-fade-y-25 " src="/image/comunidad.webp" alt="" />
+      </section>
       <Blockquote />
       <Footer />
     </>

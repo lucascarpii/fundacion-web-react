@@ -21,11 +21,14 @@ export function Colegio() {
         url="https://fundacion.tamnora.com/colegio"
       />
 
-      
+
       <Hero />
       <NivelPrimario />
       <NivelSecundario />
-      <img class="-mt-44 w-full h-full object-cover mask-fade-y-25 " src="/image/secundario_externo.webp" alt="" />
+      <section className="-mt-20 lg:-mt-44 flex items-center justify-center relative mb-5">
+        <img class="w-full h-full min-h-96 object-cover object-center mask-fade-y-25 " src="/image/secundario_externo.webp" alt="" />
+      </section>
+
       <SecundarioAdultos />
       <Footer />
     </>
