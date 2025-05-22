@@ -4,6 +4,7 @@ import { Blockquote } from "../components/Isei/Blockquote";
 import { useEffect } from "react";
 import { MetaData } from "../components/MetaData";
 import { Hero2 } from "../components/Isei/Hero2";
+import { Info } from "../components/Isei/Info";
 
 export function Isei() {
 
@@ -22,6 +23,7 @@ export function Isei() {
       
       <Hero />
       <Hero2 />
+      <Info />
       <Blockquote />
       <Footer />
     </>

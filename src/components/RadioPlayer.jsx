@@ -32,7 +32,7 @@ export function RadioPlayer() {
       <audio
         ref={audioRef}
         className="hidden"
-        src="https://stream.radioparadise.com/mp3-320"
+        src="https://streaming2.locucionar.com/proxy/escuchanqn/stream"
         type="audio/mpeg"
       >
         Tu navegador no soporta el elemento de audio.
