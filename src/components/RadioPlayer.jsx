@@ -32,7 +32,7 @@ export function RadioPlayer() {
       <audio
         ref={audioRef}
         className="hidden"
-        src="https://streaming2.locucionar.com/proxy/escuchanqn/stream"
+        src="https://uk7.internet-radio.com/proxy/simonyates44?mp=/stream"
         type="audio/mpeg"
       >
         Tu navegador no soporta el elemento de audio.
