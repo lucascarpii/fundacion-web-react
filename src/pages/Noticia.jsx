@@ -5,6 +5,7 @@ import { formatDate } from "../lib/tmn";
 import { runCode } from "../components/hooks/useRunCode";
 import { ArrowRightIcon } from "../icons/ArrowRight";
 import { MetaData } from "../components/MetaData";
+import { ShareButton } from "../components/ShareButton";
 
 export function Noticia() {
   const { id } = useParams();
@@ -90,7 +91,15 @@ export function Noticia() {
             Volver atrás
           </Link>
           <h1 className="text-3xl font-bold mb-4">{articleData.title}</h1>
-          <p className="text-gray-500 mb-6">{articleData.date}</p>
+          <div className="flex items-center justify-start gap-4 mb-6">
+            <p className="text-gray-500">{articleData.date}</p>
+          <ShareButton
+            url={canonicalUrl}
+            title={articleData.title}
+            text={articleData.description}
+            image={articleData.imageUrl} // Usa la URL de la imagen para compartir
+          />
+          </div>
           <img
             src={articleData.imageUrl} // Usa la URL original para mostrar en la página
             alt={articleData.title}

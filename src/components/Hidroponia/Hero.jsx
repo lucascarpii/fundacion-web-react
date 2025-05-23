@@ -99,14 +99,22 @@ export function Hero() {
       </div>
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
-        <iframe
-          className="w-full relative aspect-video z-10"
-          // Ajusta la ruta si tu video está en una carpeta pública, p.ej., /videos/30aniversario.mp4
+        {/* <iframe
+          className="w-full h-full relative aspect-video z-10"
           src="/video/huerta_hidroponica2.mp4"
           title="Video Fundación Neuquén Oeste"
           allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-        ></iframe>
+        ></iframe> */}
+        <video
+          className="w-full h-full relative aspect-video z-10 rounded-xl"
+          controls
+          autoPlay
+          loop
+        >
+          <source src="/video/huerta_hidroponica2.mp4" type="video/mp4" />
+          Tu navegador no soporta la etiqueta de video.
+        </video>
       </Modal>
     </section>
   )

@@ -20,9 +20,6 @@ export function Hidroponia() {
       />
 
       <Hero />
-
-      
-
       <Footer />
 
     </>
