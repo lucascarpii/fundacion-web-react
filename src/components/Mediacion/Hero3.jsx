@@ -41,7 +41,7 @@ export function Hero3() {
           </motion.span>
         </h1>
       </div>
-      <img src="/image/mediacion_logo_enca.png" className='h-40 md:h-52 ' alt="" />
+      <img src="/image/mediacion_logo_enca.png" className='h-28 md:h-40 ' alt="" />
       </div>
     </section>
   )

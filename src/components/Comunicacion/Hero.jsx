@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 export function Hero() {
 const [radioData, setRadioData] = useState(null)
-const [activeRadio, setActiveRadio] = useState(null)
+const [activeRadio, setActiveRadio] = useState(false)
 
 useEffect(() => {
   const fetchRadioData = async () => {
@@ -14,7 +14,7 @@ useEffect(() => {
       
       console.log('Radio Data:', data);
       setRadioData(data);
-      setActiveRadio(data[0].active); // Set the first radio as active by default
+      setActiveRadio(data[0].active == 1); // Set the first radio as active by default
     } catch (error) {
       console.error('Error fetching radio data:', error);
     }
