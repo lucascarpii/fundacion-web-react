@@ -72,13 +72,13 @@ export const PopularArticles = () => {
                   className="bg-gray-300 w-full aspect-[4/3] mr-4 relative"
                   style={{ backgroundImage: `url(${article.imageUrl})`, backgroundSize: "cover", backgroundPosition: "center" }}
                 >
-                  <span className={`absolute text-white ${categoryColors[article.categoryId]} text-sm px-2 py-[1px] rounded-full top-4 right-4`}>{article.category}</span>
+                  <span className={`absolute text-white ${categoryColors[article.categoryId]} text-sm px-2 py-[1px] rounded-full top-2 sm:top-4 left-2 sm:left-auto sm:right-4`}>{article.category}</span>
 
                 </div>
                 <div className="flex relative flex-col justify-center">
-                  <p className="text-sm absolute top-0 text-gray-500">{article.date}</p>
+                  <p className="text-xs sm:text-sm text-gray-500">{article.date}</p>
                   <h4 className="text-sm lg:text-2xl font-medium">{article.title}</h4>
-                  <p className="text-gray-700 text-base mt-2 line-clamp-2">{article.description}</p>
+                  <p className="text-gray-700 text-base mt-2 line-clamp-2 hidden sm:block">{article.description}</p>
                 </div>
               </Link>
             ))}
