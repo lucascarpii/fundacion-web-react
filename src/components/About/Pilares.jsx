@@ -12,7 +12,7 @@ export const Pilares = () => {
       
       <div className="max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0 grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="flex flex-col">
-          <img src="/image/acompañar.jpg" alt="" className="h-full w-4/5  object-cover rounded-2xl" />
+          <img src="/image/acompanar.jpg" alt="acompañar" className="h-full w-4/5  object-cover rounded-2xl" />
         </div>
 
         <div className="flex flex-col gap-6 w-full relative z-20 mt-4">

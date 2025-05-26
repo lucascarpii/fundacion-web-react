@@ -21,7 +21,7 @@ export default {
       backgroundImage: {
         'hero-image': "url('/image/cultivando-comunidad.webp')",
         'huerta-image': "url('/image/huerta.webp')",
-        'accompany': "url('/image/acompañar.jpg')",
+        'accompany': "url('/image/acompanar.jpg')",
         'igualdad': "url('/image/igualdad.webp')",
         'compasion': "url('/image/compasion.webp')",
         'radial-gradient': 'radial-gradient(circle, white, transparent)',
