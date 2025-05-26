@@ -1,7 +1,32 @@
 import { motion } from 'framer-motion'
 import { RadioPlayer } from '../RadioPlayer'
+import { runCode } from '../hooks/useRunCode'
+import { useEffect, useState } from 'react'
 
 export function Hero() {
+const [radioData, setRadioData] = useState(null)
+const [activeRadio, setActiveRadio] = useState(null)
+
+useEffect(() => {
+  const fetchRadioData = async () => {
+    try {
+      const data = await runCode('-sl id, active, url, name, title -fr live_radio_stream');
+      
+      console.log('Radio Data:', data);
+      setRadioData(data);
+      setActiveRadio(data[0].active); // Set the first radio as active by default
+    } catch (error) {
+      console.error('Error fetching radio data:', error);
+    }
+  };
+
+  fetchRadioData();
+}, []);
+
+
+
+
+
   return (
     <section className="flex items-center justify-center relative">
       <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -43,7 +68,14 @@ export function Hero() {
               Desde el área de Comunicación trabajamos al servicio de la comunidad, acercando la voz, los proyectos y el espíritu de la Fundación. Generamos contenidos accesibles y significativos que fortalecen los vínculos, promueven la participación y reflejan nuestro compromiso con la transformación social.
             </p>
             <div className="flex justify-center lg:justify-start items-center mt-6">
-            <RadioPlayer />
+              { activeRadio && radioData && (
+                <RadioPlayer
+                  url={radioData.find(radio => radio.active).url}
+                  name={radioData.find(radio => radio.active).name}
+                  title={radioData.find(radio => radio.active).title}
+                />
+              )}
+            
             </div>
           </div>
 

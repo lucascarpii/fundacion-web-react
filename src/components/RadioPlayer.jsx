@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import { Play, Pause, Volume2, Radio } from 'lucide-react';
 
-export function RadioPlayer() {
+export function RadioPlayer({ url, name, title }) {
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(50);
@@ -32,21 +32,20 @@ export function RadioPlayer() {
       <audio
         ref={audioRef}
         className="hidden"
-        src="https://uk7.internet-radio.com/proxy/simonyates44?mp=/stream"
+        src={url}
         type="audio/mpeg"
       >
         Tu navegador no soporta el elemento de audio.
       </audio>
       <div className="bg-gradient-to-br from-zinc-500 via-zinc-700 from-30% to-zinc-600 rounded-2xl border border-gray-200 shadow-md p-4 flex items-center gap-4 max-w-md w-full">
-       
         {isPlaying ? <div className="bg-lime-300 text-lime-600 p-2 rounded-full">
           <Radio className="w-5 h-5" />
         </div> : <div className="bg-red-200 text-red-600 p-2 rounded-full">
           <Radio className="w-5 h-5" />
         </div>}
         <div className="flex-1">
-          <p className="text-sm text-white font-semibold">Radio en Vivo</p>
-          <p className="text-xs text-sky-300 font-medium">ISEI PLAY</p>
+          <p className="text-sm text-white font-semibold">{title}</p>
+          <p className="text-xs text-sky-300 font-medium">{name}</p>
           <div className="mt-2 flex items-center gap-2">
             <Volume2 className="w-4 h-4 text-sky-200" />
             <input
