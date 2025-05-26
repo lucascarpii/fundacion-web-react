@@ -10,7 +10,7 @@ RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
 # Permitir archivos en las carpetas /image y /video con extensiones específicas
-RewriteCond %{REQUEST_URI} ^/(image|video)/.*\.(png|jpe?g|gif|svg|webp|ico|mp4|webm|ogg)$ [NC]
+RewriteCond %{REQUEST_URI} ^/(image|video)/.*\.(png|jpg|jpeg|gif|svg|webp|ico|mp4|webm|ogg)$ [NC]
 RewriteRule ^ - [L]
 
 # Redirigir todo lo demás a index.html (para SPA)
