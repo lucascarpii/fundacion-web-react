@@ -15,8 +15,8 @@ export function Comunidad() {
       <MetaData
         title="Comunidad - Fundación Neuquén Oeste | Un Presente con Conciencia"
         description="El área de Comunidad de Fundación Neuquén Oeste impulsa un presente con conciencia, acompañando a familias, mujeres y niños a través del apoyo comunitario, talleres y charlas informativas en Neuquén."
-        image="https://fundacion.tamnora.com/image/og-comunidad.webp"
-        url="https://fundacion.tamnora.com/comunidad"
+        image="https://fundacionnqnoeste.com/image/og-comunidad.webp"
+        url="https://fundacionnqnoeste.com/comunidad"
       />
 
      

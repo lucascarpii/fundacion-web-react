@@ -18,8 +18,8 @@ export function Home() {
       <MetaData 
         title="Fundación Neuquén Oeste | Transformamos desde el Servicio, Cultivando Comunidad"
         description="Fundación Neuquén Oeste: Conoce nuestras áreas de trabajo en Comunicación, Deporte, Educación (Instituto Superior y Colegio), Comunidad y Mediación. Transformamos desde el servicio, cultivando comunidad en Neuquén."
-        image="https://fundacion.tamnora.com/image/og-fundacion-principal.webp"
-        url="https://fundacion.tamnora.com/"
+        image="https://fundacionnqnoeste.com/image/og-fundacion-principal.webp"
+        url="https://fundacionnqnoeste.com/"
        />
 
       <Hero />

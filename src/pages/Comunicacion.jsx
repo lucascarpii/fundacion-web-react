@@ -16,8 +16,8 @@ export function Comunicacion() {
       <MetaData
         title="Comunicación - Fundación Neuquén Oeste | Un Mensaje de Esperanza"
         description="El área de Comunicación de Fundación Neuquén Oeste comparte un mensaje de esperanza, paz y amor utilizando radio, TV y blogs. Conoce nuestras 'Mentes de servicio' y cómo llevamos nuestro mensaje a cada persona."
-        image="https://fundacion.tamnora.com/image/og-comunicacion.webp"
-        url="https://fundacion.tamnora.com/comunicacion"
+        image="https://fundacionnqnoeste.com/image/og-comunicacion.webp"
+        url="https://fundacionnqnoeste.com/comunicacion"
       />
       
       <Hero />

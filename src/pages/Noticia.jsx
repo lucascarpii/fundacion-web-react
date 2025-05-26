@@ -64,14 +64,14 @@ export function Noticia() {
   if (!articleData) return <div className="mt-24 text-center">Cargando...</div>;
 
   // Construye la URL canónica completa
-  const canonicalUrl = `https://fundacion.tamnora.com/noticias/${articleData.idEncoded}`;
+  const canonicalUrl = `https://fundacionnqnoeste.com/noticias/${articleData.idEncoded}`;
 
   // Asegura que la URL de la imagen para Open Graph sea absoluta
   // Si articleData.imageUrl ya es una URL absoluta, puedes usarla directamente.
   // Si es una ruta relativa (ej: /uploads/imagen.jpg), necesitas anteponer el dominio.
   let ogImageUrl = articleData.imageUrl;
   if (articleData.imageUrl && !articleData.imageUrl.startsWith('http')) {
-    ogImageUrl = `https://fundacion.tamnora.com${articleData.imageUrl.startsWith('/') ? '' : '/'}${articleData.imageUrl}`;
+    ogImageUrl = `https://fundacionnqnoeste.com${articleData.imageUrl.startsWith('/') ? '' : '/'}${articleData.imageUrl}`;
   }
 
 

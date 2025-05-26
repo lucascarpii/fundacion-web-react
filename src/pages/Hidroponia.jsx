@@ -15,8 +15,8 @@ export function Hidroponia() {
       <MetaData
         title="Hidroponía Neuquén Oeste - Fundación Neuquén Oeste | Cultivando Futuro"
         description="Descubre el invernadero hidropónico de Fundación Neuquén Oeste, un laboratorio vivo impulsado por energía solar donde cultivamos conciencia, valores y futuro de manera sostenible en Neuquén."
-        image="https://fundacion.tamnora.com/image/og-hidroponia.webp"
-        url="https://fundacion.tamnora.com/hidroponia"
+        image="https://fundacionnqnoeste.com/image/og-hidroponia.webp"
+        url="https://fundacionnqnoeste.com/hidroponia"
       />
 
       <Hero />

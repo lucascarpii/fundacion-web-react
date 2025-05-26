@@ -19,8 +19,8 @@ export function Mediacion() {
       <MetaData
         title="Mediación y Prácticas Restaurativas (CPREM) - Fundación Neuquén Oeste"
         description="El CPREM de Fundación Neuquén Oeste ofrece mediación comunitaria gratuita y capacitación en prácticas restaurativas para la resolución pacífica de conflictos en Neuquén. El diálogo pacifica."
-        image="https://fundacion.tamnora.com/image/og-mediacion.webp"
-        url="https://fundacion.tamnora.com/mediacion"
+        image="https://fundacionnqnoeste.com/image/og-mediacion.webp"
+        url="https://fundacionnqnoeste.com/mediacion"
       />
       
       <Header theme="light" />
