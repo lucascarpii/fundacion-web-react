@@ -65,7 +65,7 @@ export function Header({ theme = 'dark' }) {
           </ul>
 
           <Link
-            to="/sobre-nosotros"
+            to="/sobrenosotros"
             className={`w-40 tracking-widest hidden lg:block text-xs font-semibold uppercase border-2 hover:text-white hover:bg-isei-blue hover:border-transparent transition-all duration-200 ${buttonColor} pt-3 pb-[11px] px-3`}
           >
             Sobre nosotros
@@ -109,7 +109,7 @@ export function Header({ theme = 'dark' }) {
         </ul>
 
         <div className={`px-6 pb-6 ${!isOpen && 'hidden'}`}>
-          <Link to="/sobre-nosotros" onClick={toggleMenu}>
+          <Link to="/sobrenosotros" onClick={toggleMenu}>
             <button className="w-full border-2 border-isei-blue text-isei-blue hover:bg-isei-blue hover:text-white transition-colors duration-200 shadow-md uppercase text-xs font-semibold pb-2.5 pt-3">
               Sobre nosotros
             </button>

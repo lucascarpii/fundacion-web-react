@@ -29,7 +29,7 @@ function AppContent() {
         <Route path="/hidroponia" element={<Hidroponia />} />
         <Route path="/isei" element={<Isei />} />
         <Route path="/mediacion" element={<Mediacion />} />
-        <Route path="/sobre-nosotros" element={<SobreNosotros />} />
+        <Route path="/sobrenosotros" element={<SobreNosotros />} />
         <Route path="/noticias/:id" element={<Noticia />} />
       </Routes>
     </>

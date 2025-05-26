@@ -5,9 +5,11 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "npm run generate:html && vite build && npm run delete:html",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate:html": "node generate-html-pages.js",
+    "delete:html": "node delete-html-pages.js"
   },
   "dependencies": {
     "lucide-react": "^0.510.0",
