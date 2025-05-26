@@ -10,13 +10,14 @@ export function Header({ theme = 'dark' }) {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   const navLinks = [
-    { label: 'Colegio', href: '/colegio' },
-    { label: 'Isei', href: '/isei' },
-    { label: 'Deporte', href: '/deporte' },
-    { label: 'Comunicación', href: '/comunicacion' },
-    { label: 'Comunidad', href: '/comunidad' },
-    { label: 'Mediación', href: '/mediacion' },
-    { label: 'Hidroponia', href: '/hidroponia' },
+    { label: 'Inicio', href: '/', bg: 'bg-isei-blue' },
+    { label: 'Colegio', href: '/colegio', bg: 'bg-red-500' },
+    { label: 'Isei', href: '/isei', bg: 'bg-teal-500' },
+    { label: 'Deporte', href: '/deporte', bg: 'bg-orange-500' },
+    { label: 'Comunicación', href: '/comunicacion', bg: 'bg-sky-500' },
+    { label: 'Comunidad', href: '/comunidad', bg: 'bg-yellow-500' },
+    { label: 'Mediación', href: '/mediacion', bg: 'bg-purple-500' },
+    { label: 'Hidroponia', href: '/hidroponia', bg: 'bg-green-500' },
   ];
 
   const menuVariants = {
@@ -80,7 +81,7 @@ export function Header({ theme = 'dark' }) {
       >
         <div className='flex items-center justify-between min-h-[90px] px-6'>
           <Link to="/">
-            <img className="w-[70px] object-cover" src="/image/fundacion_logo.png" alt="Logo" />
+            <img className="w-[70px] object-cover" src="/image/fundacion_logo.png" alt="Logo" onClick={toggleMenu} />
           </Link>
           <MenuButton
             isOpen={isOpen}
@@ -90,13 +91,19 @@ export function Header({ theme = 'dark' }) {
           />
         </div>
 
-        <ul className={`p-6 h-full ${!isOpen && 'hidden'}`}>
+        <ul className={`py-6 h-full ${!isOpen && 'hidden'}`}>
           {navLinks.map((link) => (
             <Link key={link.label} to={link.href} onClick={toggleMenu}>
-              <li className="py-6 border-b hover:text-isei-blue cursor-pointer flex justify-between items-center text-title-black">
-                {link.label}
+              <motion.li 
+              
+              className="py-6 px-6 bg-gradient-to-t to-white from-zinc-50 border-b hover:text-isei-blue cursor-pointer flex justify-between items-center text-title-black">
+                {/* Agregar un circulo de color al lado del texto */}
+                <span>
+                  <span className={`inline-block w-3 h-3 ${link.bg} rounded-full mr-2`}></span>
+                  {link.label}
+                </span>
                 <ArrowRightIcon className='size-5' />
-              </li>
+              </motion.li>
             </Link>
           ))}
         </ul>
