@@ -22,7 +22,7 @@ export function Hero() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 0 }}
             >
-              Impulsando juntos 
+              Habitando
             </motion.span>
             <br />
             <motion.span

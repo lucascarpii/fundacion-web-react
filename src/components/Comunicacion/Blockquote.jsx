@@ -18,6 +18,9 @@ export function Blockquote() {
               <span className="text-lg md:text-base font-medium">contacto@fundacionnqnoeste.com</span>
             </a>
           </li>
+
+          “La comunicación tiene un rol clave a la hora de tejer lazos comunitarios. Desde el área, nos motiva promover la participación de distintos agentes sociales en un diálogo abierto, donde el aprendizaje y la empatía tengan un rol central”.
+
         </ul> */}
       </div>
       <div className="bg-isei-footer rounded-xl px-4 py-6 md:py-8 lg:py-10 flex flex-col gap-4 relative overflow-hidden">
@@ -29,7 +32,7 @@ export function Blockquote() {
           </svg>
           <blockquote>
             <p className="text-white text-center text-lg md:text-xl italic text-balance">
-              “Nuestro propósito es llevar el mensaje de la Fundación <br className="hidden md:block " /> a cada persona, a cada familia, a cada lugar”
+              “La comunicación tiene un rol clave a la hora de tejer lazos comunitarios. Desde el área, nos motiva promover la participación de distintos agentes sociales en un diálogo abierto, donde el aprendizaje y la empatía tengan un rol central.”
             </p>
           </blockquote>
           <figcaption className="flex items-center justify-center mt-10 space-x-3">

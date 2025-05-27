@@ -28,7 +28,7 @@ export function RadioPlayer({ url, name, title }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center  py-2">
+    <div className="flex w-full flex-col items-center justify-center h-28 py-2">
       <audio
         ref={audioRef}
         className="hidden"
@@ -37,7 +37,7 @@ export function RadioPlayer({ url, name, title }) {
       >
         Tu navegador no soporta el elemento de audio.
       </audio>
-      <div className="bg-gradient-to-br from-zinc-600 via-zinc-800 from-30% to-zinc-700 rounded-2xl border border-gray-200 shadow-md p-4 flex items-center gap-4 max-w-md w-full">
+      <div className="bg-gradient-to-br from-zinc-600 via-zinc-800 from-30% to-zinc-700 rounded-2xl border border-gray-700 shadow-md py-5 px-4 flex items-center gap-4 max-w-md w-full">
         {isPlaying ? <div className="bg-lime-600 text-lime-200 p-2 rounded-full">
           <Radio className="w-5 h-5" />
         </div> : <div className="bg-red-600 text-red-200 p-2 rounded-full">

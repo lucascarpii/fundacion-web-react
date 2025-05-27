@@ -40,8 +40,8 @@ export const PopularArticles = () => {
   }, []);
 
   return (
-    <div className="max-w-screen-xl mx-auto px-4 py-20">
-      <h2 className="text-4xl mb-6">Novedades</h2>
+    <div className="max-w-screen-xl mx-auto px-4 py-20 ">
+      <h2 className="text-4xl mb-6 text-zinc-500 font-semibold">Publicaciones</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Artículo principal */}
         {articles

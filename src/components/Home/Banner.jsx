@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { LinkIcon } from "../../icons/LinkIcon";
 import { runCode } from '../hooks/useRunCode.js';
+import { ExternalLink, Link2Icon, VideoIcon } from "lucide-react";
 
 export function Banner() {
   const [isLive, setIsLive] = useState(false);
@@ -36,22 +37,22 @@ export function Banner() {
   }
 
   return (
-    <section className="w-full p-4 -mb-14 md:-mb-10 relative top-0 left-0 z-40">
-      <div className="flex bg-zinc-200 rounded-lg flex-col py-2 px-3 md:flex-row justify-between max-w-screen-xl mx-auto items-center gap-4 md:gap-10">
-        <div className="text-lg font-light items-center text-center md:text-left flex flex-col md:flex-row">
-          <h3 className="me-2 font-medium flex items-center gap-2">
-            <span className="h-3 w-3 bg-red-700 animate-pulse rounded-full"></span>
-            {streamData.title}
-          </h3>
-          <p className="text-sm">
-            {streamData.description}
-          </p>
+   <div className="flex w-full flex-col items-center justify-center h-28 ">
+      
+      <a href={streamData.url} target="_blank" rel="noopener noreferrer" className="bg-gradient-to-br from-red-700 via-red-900 from-30% to-red-700 rounded-2xl border border-red-700 shadow-md py-8 px-4 flex items-center gap-4 max-w-md w-full">
+        <div className="bg-zinc-800 text-zinc-200 p-2 rounded-full">
+          <VideoIcon className="w-5 h-5" />
+        </div> 
+        <div className="flex-1">
+          <p className="text-sm text-white font-semibold">{streamData.title}</p>
+          <p className="text-xs text-zinc-300 font-medium">{streamData.description}</p>
+          
         </div>
-        <a href={streamData.url} target="_blank" rel="noopener noreferrer" className="flex text-sm items-center gap-3 px-6 py-1.5 text-white bg-black rounded-lg">
-          Ir a Ver
-          <LinkIcon className="size-4" />
-        </a>
-      </div>
-    </section>
+        <span className="bg-transparent text-white p-2 rounded-xl hover:bg-red-500 transition">
+          <ExternalLink className="w-5 h-5" /> 
+        </span>
+      </a>
+
+    </div>
   )
 }

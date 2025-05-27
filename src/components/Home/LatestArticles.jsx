@@ -80,7 +80,7 @@ export const LatestArticles = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 pt-8 pb-20">
-      <h2 className="text-4xl mb-6">Últimas noticias</h2>
+      {/* <h2 className="text-2xl mb-6">Más publicaciones sobre ...</h2> */}
       {articles.length === 0 ? (
         <p className="text-gray-500 text-center">No hay noticias disponibles en este momento.</p>
       ) : (

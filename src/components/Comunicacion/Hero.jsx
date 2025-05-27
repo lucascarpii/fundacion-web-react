@@ -41,7 +41,7 @@ useEffect(() => {
       </div>
       
       <div className="w-full max-w-screen-xl mx-auto px-6">
-        <div className='w-full max-w-screen-xl min-h-[80dvh] flex flex-col-reverse xl:flex-row gap-10 justify-center xl:justify-between items-center mx-auto px-4 sm:px-6 '>
+        <div className='w-full max-w-screen-xl min-h-[70dvh] flex flex-col-reverse xl:flex-row gap-10 justify-center xl:justify-between items-center mx-auto px-4 sm:px-6 '>
           <h1 className="text-center lg:text-start text-5xl sm:scale-110 sm:text-6xl md:text-7xl  lg:scale-100 lg:text-8xl font-light text-black">
             <motion.span
               initial={{ opacity: 0 }}
@@ -77,6 +77,9 @@ useEffect(() => {
               )}
             
             </div>
+            <p className="mt-6 text-pretty">
+              <strong>ISEI Play</strong> es una iniciativa conjunta del área de Comunicación y el ISEI. Un medio comunitario donde co-creamos contenidos, dando lugar a relatos que expresan nuestra identidad y nuestra forma de habitar el mundo.
+            </p>
           </div>
 
 

@@ -42,7 +42,7 @@ export function SecundarioAdultos() {
             <blockquote>
               {/* Se mantiene la cita original */}
               <p className="text-white text-center text-xl italic text-balance">
-                “Nuestro proyecto tiene que ver con la vida plena. Nos interesan las relaciones humanas, la realidad social. LLevar a la práctica los valores que ayudan a construir una sociedad mejor”
+                “Nuestro proyecto tiene que ver con la vida plena. Nos interesan las relaciones humanas, la realidad social. Llevar a la práctica los valores que ayudan a construir una sociedad mejor”
               </p>
             </blockquote>
             {/* Figcaption actualizado con el nuevo director */}

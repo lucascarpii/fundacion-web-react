@@ -28,7 +28,7 @@ export function Areas() {
         </rect>
       </svg>
       <div className='absolute w-full h-full bg-gradient-to-b from-white via-transparent to-white'></div>
-      <div className='max-w-screen-2xl mx-auto py-28 flex flex-col justify-between gap-28 px-6'>
+      <div className='max-w-screen-2xl mx-auto py-20 flex flex-col justify-between gap-28 px-6'>
         <h2 className='text-center relative text-4xl md:text-5xl font-light tracking-wide flex flex-col md:block items-center'>
           Explora nuestras <span className='bg-[#84cc16] text-white ms-1 px-3 max-w-fit mt-2 scale-110'> áreas de trabajo </span>
         </h2>
