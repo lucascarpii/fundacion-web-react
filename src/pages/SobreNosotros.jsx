@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Hero } from "../components/About/Hero";
+import { Hero2 } from "../components/About/Hero2";
 import { Pilares } from "../components/About/Pilares";
 import { Valores } from "../components/About/Valores";
 import { Footer } from "../components/Footer2";
@@ -24,7 +24,7 @@ export function SobreNosotros() {
         url="https://fundacionnqnoeste.com/sobrenosotros"
       />
 
-      <Hero />
+      <Hero2 />
       {/* <ZonaRestaurativa /> */}
       {/* <Nosotros /> */}
       <History />
