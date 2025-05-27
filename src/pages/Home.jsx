@@ -3,7 +3,7 @@ import { Areas } from "../components/Home/Areas";
 import { LatestArticles } from "../components/Home/LatestArticles";
 import { PopularArticles } from "../components/Home/PopularArticles";
 import { Footer } from "../components/Footer";
-import { Banner } from "../components/Home/Banner";
+import { Banner2 } from "../components/Home/Banner2";
 import { useEffect, useState } from "react";
 import { MetaData } from "../components/MetaData";
 import { RadioPlayer } from "../components/RadioPlayer";
@@ -44,7 +44,7 @@ export function Home() {
 
       <Hero />
 
-        <div className="py-6 -mt-20  z-40">
+        <div className="py-6 -mt-20 z-40">
           <div className="w-full max-w-screen-xl mx-auto px-6 relative z-10 flex flex-col items-center justify-center gap-4 lg:gap-1 lg:flex-row">
             {activeRadio && radioData && (
               <RadioPlayer
@@ -54,11 +54,11 @@ export function Home() {
               />
             )}
 
-            <Banner />
+            <Banner2 />
           </div>
         </div>
 
-      <div id="areas" className="relative">
+      <div id="areas" className="relative mt-8">
         <Areas />
       </div>
       <PopularArticles />
