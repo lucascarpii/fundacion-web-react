@@ -5,17 +5,17 @@ export function ZonaRestaurativa() {
     <div className="max-w-screen-xl mx-auto my-24 px-4 sm:px-6 lg:px-8">
       <div className="lg:col-start-1 lg:grid lg:w-full lg:grid-cols-2 lg:gap-x-8">
 
-        <h1 className="mt-2 col-span-2 mb-6 text-4xl font-semibold tracking-tight text-isei-blue">
+        <h1 className="mt-2 col-span-2 mb-6 text-6xl font-semibold tracking-tight text-lime-600">
           ZONA RESTAURATIVA
         </h1>
-        <div className="lg:max-w-xl text-lg text-gray-700 text-balance">
-        <h2 className="mt-3 col-span-2  text-2xl font-semibold tracking-tight text-gray-900">
+        <div className="lg:max-w-xl text-lg text-gray-400 text-balance">
+        <h2 className="mt-3 col-span-2  text-2xl font-semibold tracking-tight text-gray-100">
           ¿Qué es una zona restaurativa?
         </h2>
           <p className="mt-3">
             Entendemos por zona restaurativa a un espacio donde las personas que lo construyen cotidianamente adoptan el enfoque de las Prácticas Restaurativas para consolidar un sentido de comunidad a través del respeto, el diálogo y los procesos justos.
           </p>
-          <h2 className="mt-6 col-span-2  text-2xl font-semibold tracking-tight text-gray-900">
+          <h2 className="mt-6 col-span-2  text-2xl font-semibold tracking-tight text-gray-100">
           ¿Por qué nuestra institución es una zona restaurativa?
         </h2>
           <p className="mt-1">
@@ -23,11 +23,11 @@ export function ZonaRestaurativa() {
           </p>
         </div>
 
-        <div className="lg:max-w-xl text-lg text-gray-700 text-balance">
+        <div className="lg:max-w-xl text-lg text-gray-400 text-balance">
            <p className="mt-3">
             Trabajamos en la capacitación e implementación de las herramientas que ofrecen las Prácticas Restaurativas con el fin de sembrar una cultura nutritiva en los vínculos que se gestan dentro de nuestra comunidad.
           </p>
-          <h2 className="mt-6 col-span-2  text-2xl font-semibold tracking-tight text-gray-900">
+          <h2 className="mt-6 col-span-2  text-2xl font-semibold tracking-tight text-gray-100">
           Nuestro Sueño
         </h2>
           <p className="mt-1">

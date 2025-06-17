@@ -25,12 +25,12 @@ export function SobreNosotros() {
       />
 
       <Hero2 />
-      {/* <ZonaRestaurativa /> */}
       {/* <Nosotros /> */}
-      <History />
+      {/* <History /> */}
       <div className="bg-isei-footer overflow-hidden">
         <Pilares />
         <Valores />
+      <ZonaRestaurativa />
         <Footer />
       </div>
     </>

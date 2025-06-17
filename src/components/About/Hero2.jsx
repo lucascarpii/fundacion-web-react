@@ -9,7 +9,7 @@ export function Hero2() {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <section className="relative overflow-hidden">
+    <section className="relative overflow-hidden mb-24">
       {/* Elementos de fondo (SVG grid, gradiente) - Se mantienen */}
       <svg className="w-full absolute h-full opacity-20 text-base-400/70" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
         <defs>
@@ -48,17 +48,25 @@ export function Hero2() {
             </motion.span>
           </h1>
 
-          <article className="text-xl space-y-4 text-gray-700 max-w-xl text-pretty">
-            {/* <strong>Sobre Nosotros</strong> */}
+          <article className="text-lg text-gray-700 max-w-xl text-pretty">
+            <div className="mb-6">
+            <h4 className="text-2xl font-semibold ">Misión</h4>
             <p>
-              <strong>Fundación Neuquén Oeste</strong> nace del compromiso con la transformación social, con el propósito de generar oportunidades reales que impacten de manera positiva en las comunidades.
+              Acompañar procesos que fortalezcan el diálogo, el encuentro y el servicio en las comunidades, inspirados en el modelo de Jesús.
             </p>
+            </div>
+            <div className="mb-6">
+            <h4 className="text-2xl font-semibold ">Visión</h4>
             <p>
-              Nuestro camino comenzó con la convicción de que el deporte puede ser una poderosa herramienta de inclusión, acompañamiento y crecimiento.
+              Ser una organización referente en el acompañamiento comunitario a través de enfoques restaurativos que impulsen la participación y la transformación social.
             </p>
+            </div>
+            <div className="mb-6">
+            <h4 className="text-2xl font-semibold ">Valores</h4>
             <p>
-              A través de actividades deportivas, promovimos desde los inicios valores como el respeto, el trabajo en equipo y la superación personal, generando espacios de contención para niños, niñas y adolescentes del oeste neuquino.
+              Diálogo, iniciativa, encuentro, servicio, compromiso y  escucha activa.
             </p>
+            </div>
           </article>
 
         </div>
