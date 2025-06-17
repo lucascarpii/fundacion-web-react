@@ -5,7 +5,7 @@ export const Pilares = () => {
       <div className="w-4/12 aspect-square rounded-full bg-indigo-600 absolute top-[30rem] right-[20rem] blur-[300px]"></div>
       <div className="text-white max-w-screen-xl mx-auto px-6 sm:px-8 xl:px-0  mb-12">
         <h2 className="text-4xl md:text-6xl/tight max-w-lg bg-gradient-to-br from-white from-40% h-fit to-white/40 inline-block text-transparent bg-clip-text">
-          Sobre <span className="text-[#d0f500]">Nosotros</span>
+          Nuestra <span className="font-semibold  text-[#d0f500]">historia</span>
         </h2>
 
       </div>

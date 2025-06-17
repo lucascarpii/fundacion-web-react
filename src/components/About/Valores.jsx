@@ -3,7 +3,7 @@ export function Valores() {
     <section className="w-full relative pb-12  px-6 xl:px-0">
       <div className="w-4/12 aspect-square rounded-full bg-[#3753b0] absolute top-[44rem] left-[12rem] blur-[250px]"></div>
       <div className="text-white max-w-screen-xl mx-auto mb-8">
-          <h2 className="text-4xl md:text-6xl mb-8">Camino de <span className="font-semibold  text-[#d0f500]"> crecimeinto y consolidación </span> </h2>
+          <h2 className="text-4xl md:text-6xl mb-8">Camino de <span className="font-semibold  text-[#d0f500]"> crecimiento y consolidación </span> </h2>
 
           </div>
 

@@ -25,13 +25,14 @@ export function Hero2() {
         <rect fill="url(#grid-pattern)" height="100%" width="100%"></rect>
       </svg>
       <div className='absolute w-full h-full lg:bg-hero-radial-gradient'></div>
+      
 
       <div className='max-w-2xl lg:max-w-screen-xl mx-auto pt-24 lg:pt-28 flex flex-col justify-center lg:grid px-6 sm:px-8 xl:px-0 lg:grid-cols-5 gap-4 xl:gap-10'>
         <div className="h-fit lg:h-full flex flex-col justify-center z-10 col-span-1 lg:col-span-3 gap-8 lg:gap-10">
           {/* Título Principal H1 - Se mantiene */}
           <h1 className="text-5xl sm:text-7xl lg:text-7xl xl:text-8xl flex flex-col text-title-black">
             <span>
-              Nuestra
+              Sobre
             </span>
             <motion.span
               className="px-2 lg:px-2 lg:pe-3 w-fit pb-1 lg:pb-3 mt-2 lg:mt-3 font-medium"
@@ -44,7 +45,7 @@ export function Hero2() {
               animate={{ backgroundPosition: '0% 0', color: '#ffffffff' }}
               transition={{ duration: 1.2, ease: 'backOut' }}
             >
-              Fundación
+              nosotros
             </motion.span>
           </h1>
 
