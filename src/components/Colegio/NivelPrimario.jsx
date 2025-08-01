@@ -33,11 +33,12 @@ export function NivelPrimario() {
               <strong>Resolución de conflictos</strong> a través del <strong>diálogo respetuoso</strong> enmarcado en la filosofía institucional de <strong>Prácticas Restaurativas y Mediación Escolar</strong>.
             </li>
           </ul>
-          {/* <button className='mt-6 w-full sm:w-auto' >
-            <a className='bg-red-500 flex items-center justify-center sm:block hover:bg-red-700 px-6 py-3 rounded-xl rounded-tl-none text-white' href='https://docs.google.com/forms/d/e/1FAIpQLScWh6bnNlGU1Unnobjxua4_je1MYOzIkYf1D4oG3Aa4P8I6Qw/closedform'>
-              Pre-Inscripciones 2025
+          <button className='mt-6 w-full sm:w-auto' >
+            <a className='bg-red-500 flex items-center justify-center sm:block hover:bg-red-700 px-6 py-3 rounded-xl rounded-tl-none text-white' 
+            href='https://forms.gle/v3WBXjLn2u4uKVWD6' target="_blank">
+              Pre-Inscripciones 2026 - Nivel Inicial - (SALA DE 5)
             </a>
-          </button> */}
+          </button>
         </div>
 
         {/* Columna de Cita (se mantiene) */}

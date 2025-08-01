@@ -23,11 +23,12 @@ export function NivelSecundario() {
           {/* --- Fin del Nuevo Contenido --- */}
 
           {/* Botón de Pre-Inscripciones (se mantiene) */}
-          {/* <button className='mt-6 w-full sm:w-auto'> 
-            <a className='flex items-center justify-center sm:block bg-teal-500 hover:bg-teal-700 px-6 py-3 rounded-xl rounded-tl-none text-white' href="https://docs.google.com/forms/d/e/1FAIpQLSeYZzEEwJwVF84RZb1hHBSRHU11-G8LjMRsUyVU_wV1frf4uw/closedform">
-              Pre-Inscripciones 2025
+          <button className='mt-6 w-full sm:w-auto'> 
+            <a className='flex items-center justify-center sm:block bg-teal-500 hover:bg-teal-700 px-6 py-3 rounded-xl rounded-tl-none text-white' 
+            href="https://forms.gle/UHRFf5ixyDxss2ng8" target="_blank">
+              Pre-Inscripciones 2026
             </a>
-          </button> */}
+          </button>
         </div>
 
         {/* Columna de Cita (Directora actualizada) */}
