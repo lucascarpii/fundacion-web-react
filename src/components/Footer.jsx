@@ -17,7 +17,7 @@ export const Footer = () => {
                 <span className="self-center text-white text-xl font-semibold whitespace-nowrap">Fundación Neuquen Oeste</span>
               </a>
               <div className="flex flex-col gap-3 mt-6 text-gray-400">
-                <a href="tel:+542994469745" target='_blank' className="flex items-center">
+                <a href="tel:+542995370159" target='_blank' className="flex items-center">
                   <PhoneIcon className="mr-2" /> 2995370159
                 </a>
                 <a href="mailto:contacto@fundacionnqnoeste.com" target='_blank' className="flex items-center">

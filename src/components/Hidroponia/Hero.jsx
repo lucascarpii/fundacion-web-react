@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import { MailIcon } from "../../icons/MailIcon";
 import { FileTypePDF } from '../../icons/FileTypePDF';
 import { useState } from 'react';

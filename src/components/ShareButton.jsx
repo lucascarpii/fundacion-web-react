@@ -30,7 +30,7 @@ const convertImageToJPEG = async (url) => {
   });
 };
 
-const ShareButton = ({ imageUrl, title, text }) => {
+const ShareButton = ({ url, imageUrl, title, text }) => {
   const [isSharing, setIsSharing] = useState(false);
 
   const handleShare = async () => {
@@ -45,10 +45,11 @@ const ShareButton = ({ imageUrl, title, text }) => {
       const shareData = {
         title,
         text,
-        url: window.location.href, // Añade la URL del artículo actual
+        url: url || window.location.href,
       };
 
       try {
+        if (!imageUrl) throw new Error('Sin imagen');
         const file = await convertImageToJPEG(imageUrl);
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
           shareData.files = [file];
@@ -58,8 +59,9 @@ const ShareButton = ({ imageUrl, title, text }) => {
       }
 
       await navigator.share(shareData);
-      console.log('Contenido compartido con éxito');
     } catch (error) {
+      // El usuario cerró el diálogo de compartir: no es un error.
+      if (error.name === 'AbortError') return;
       console.error('Error al compartir:', error);
       alert('Ocurrió un error al intentar compartir.');
     } finally {

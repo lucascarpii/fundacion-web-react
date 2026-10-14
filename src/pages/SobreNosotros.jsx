@@ -20,7 +20,7 @@ export function SobreNosotros() {
       <MetaData
         title="Sobre Nosotros - Fundación Neuquén Oeste | Un Gran Ideal Construye un Mundo Mejor"
         description="Conoce la Fundación Neuquén Oeste, nuestros principios, visión, misión y valores. Desde 1998 trabajando por un mundo mejor a través de la educación y el compromiso comunitario en Neuquén."
-        image="https://fundacionnqnoeste.com/image/og-sobrenosotros.webp"
+        image="https://fundacionnqnoeste.com/image/og-sobre-nosotros.webp"
         url="https://fundacionnqnoeste.com/sobrenosotros"
       />
 

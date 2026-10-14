@@ -18,9 +18,8 @@ export function Home() {
       try {
         const data = await runCode('-sl id, active, url, name, title -fr live_radio_stream');
 
-        console.log('Radio Data:', data);
         setRadioData(data);
-        setActiveRadio(data[0].active == 1); // Set the first radio as active by default
+        setActiveRadio(data.some((radio) => radio.active == 1));
       } catch (error) {
         console.error('Error fetching radio data:', error);
       }
@@ -48,9 +47,9 @@ export function Home() {
           <div className="w-full max-w-screen-xl mx-auto px-6 relative z-10 flex flex-col items-center justify-center gap-4 lg:gap-1 lg:flex-row">
             {activeRadio && radioData && (
               <RadioPlayer
-                url={radioData.find(radio => radio.active).url}
-                name={radioData.find(radio => radio.active).name}
-                title={radioData.find(radio => radio.active).title}
+                url={radioData.find(radio => radio.active == 1).url}
+                name={radioData.find(radio => radio.active == 1).name}
+                title={radioData.find(radio => radio.active == 1).title}
               />
             )}
 

@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { MailIcon } from '../../icons/MailIcon';
 import { Whatsapp } from '../../icons/Whatsapp';
 import { Facebook } from '../../icons/Facebook';
@@ -33,7 +33,7 @@ export function SecundarioAdultos() {
 
         {/* Columna de Cita (Director actualizado) */}
         <div className="bg-isei-footer rounded-xl  flex flex-col gap-4 relative overflow-hidden max-w-3xl mx-auto">
-           <img class="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/secundario_adultos.webp" alt="" />
+           <img className="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/secundario_adultos.webp" alt="" />
           <div className="absolute h-1/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
           <div className="absolute h-60 aspect-square rounded-full bg-amber-500 -right-40 bottom-24 blur-[100px] "></div>
           <figure className="mx-auto max-w-screen-md text-center px-6 py-6 md:py-8 lg:py-12 z-10">

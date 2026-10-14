@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { MailIcon } from '../../icons/MailIcon';
 import { Whatsapp } from '../../icons/Whatsapp';
 import { Facebook } from '../../icons/Facebook';
@@ -33,7 +33,7 @@ export function NivelSecundario() {
 
         {/* Columna de Cita (Directora actualizada) */}
         <div className="bg-isei-footer rounded-xl w-full flex flex-col gap-4 relative overflow-hidden max-w-screen-xl mx-auto">
-          <img class="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/secundario_estudiantes.webp" alt="" />
+          <img className="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/secundario_estudiantes.webp" alt="" />
           <div className="absolute h-1/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
           <div className="absolute h-80 aspect-square rounded-full bg-isei-teal -right-40 bottom-24 blur-[100px] "></div>
           <figure className="mx-auto max-w-screen-xl px-6 py-6 md:py-8 lg:py-24 text-center z-10">

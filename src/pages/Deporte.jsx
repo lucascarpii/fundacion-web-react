@@ -1,4 +1,3 @@
-import { Header } from "../components/Header";
 import { Hero } from "../components/Deporte/Hero";
 import { Blockquote } from "../components/Deporte/Blockquote";
 import { Footer } from "../components/Footer";
@@ -19,11 +18,9 @@ export function Deporte() {
         image="https://fundacionnqnoeste.com/image/og-deporte.webp"
         url="https://fundacionnqnoeste.com/deporte"
       />
-      
-      <Header theme="light" />
       <Hero />
        <section className="-mt-40 lg:-mt-44 flex items-center justify-center relative mb-5">
-        <img class="w-full h-full min-h-96 object-cover object-center mask-fade-y-25 " src="/image/secundario_externo.webp" alt="" />
+        <img className="w-full h-full min-h-96 object-cover object-center mask-fade-y-25 " src="/image/secundario_externo.webp" alt="" />
       </section>
       <Blockquote />
       <div className="bg-isei-footer relative overflow-hidden">

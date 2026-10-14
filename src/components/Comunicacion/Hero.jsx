@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion } from 'motion/react'
 import { RadioPlayer } from '../RadioPlayer'
 import { runCode } from '../hooks/useRunCode'
 import { useEffect, useState } from 'react'
@@ -12,9 +12,8 @@ useEffect(() => {
     try {
       const data = await runCode('-sl id, active, url, name, title -fr live_radio_stream');
       
-      console.log('Radio Data:', data);
       setRadioData(data);
-      setActiveRadio(data[0].active == 1); // Set the first radio as active by default
+      setActiveRadio(data.some((radio) => radio.active == 1));
     } catch (error) {
       console.error('Error fetching radio data:', error);
     }
@@ -70,9 +69,9 @@ useEffect(() => {
             <div className="flex justify-center lg:justify-start items-center mt-6">
               { activeRadio && radioData && (
                 <RadioPlayer
-                  url={radioData.find(radio => radio.active).url}
-                  name={radioData.find(radio => radio.active).name}
-                  title={radioData.find(radio => radio.active).title}
+                  url={radioData.find(radio => radio.active == 1).url}
+                  name={radioData.find(radio => radio.active == 1).name}
+                  title={radioData.find(radio => radio.active == 1).title}
                 />
               )}
             

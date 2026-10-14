@@ -1,5 +1,3 @@
-import { Home } from "lucide-react";
-
 export const pageMeta = {
   colegio: {
     title: "Colegio | Fundación Neuquén Oeste",
@@ -11,13 +9,13 @@ export const pageMeta = {
   radio: {
     title: "Radio | Fundación Neuquén Oeste",
     description: "Escuchá nuestra radio en vivo con música, noticias y programas especiales.",
-    image: "https://fundacionnqnoeste.com/image/og-radio.webp",
+    image: "https://fundacionnqnoeste.com/image/og-fundacion-principal.webp",
     url: "https://fundacionnqnoeste.com/radio",
   },
   noticia: {
     title: "Noticias | Fundación Neuquén Oeste",
     description: "Mantente informado con las últimas noticias y novedades de nuestra fundación.",
-    image: "https://fundacionnqnoeste.com/image/og-noticias.webp",
+    image: "https://fundacionnqnoeste.com/image/og-fundacion-principal.webp",
     url: "https://fundacionnqnoeste.com/noticias",
   },
   comunicacion: {
@@ -59,13 +57,13 @@ export const pageMeta = {
   sobrenosotros: {
     title: "Sobre Nosotros | Fundación Neuquén Oeste",
     description: "Conoce la Fundación Neuquén Oeste, nuestros principios, visión, misión y valores. Desde 1998 trabajando por un mundo mejor a través de la educación y el compromiso comunitario en Neuquén.",
-    image: "https://fundacionnqnoeste.com/image/og-sobrenosotros.webp",
+    image: "https://fundacionnqnoeste.com/image/og-sobre-nosotros.webp",
     url: "https://fundacionnqnoeste.com/sobrenosotros",
   },
   home: {
     title: "Fundación Neuquén Oeste",
     description: "Fundación Neuquén Oeste: educación, comunidad y desarrollo sostenible en Neuquén. Conoce nuestros programas y cómo transformamos vidas desde 1998.",
-    image: "https://fundacionnqnoeste.com/image/og-home.webp",
+    image: "https://fundacionnqnoeste.com/image/og-fundacion-principal.webp",
     url: "https://fundacionnqnoeste.com/",
   }
 };

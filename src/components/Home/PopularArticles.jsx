@@ -26,7 +26,7 @@ export const PopularArticles = () => {
       const fetchedArticles = response.map((article) => ({
         id: article.news_id,
         title: article.title,
-        date: formatDate(article.publish_date).fechaCarta,
+        date: formatDate(article.publish_date)?.fechaCarta,
         description: article.short_description,
         imageUrl: article.featured_image_url,
         categoryId: article.category_id,

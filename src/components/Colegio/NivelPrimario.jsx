@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'; // Se asume que motion podría usarse en otros lugares o para animaciones futuras
+import { motion } from 'motion/react'; // Se asume que motion podría usarse en otros lugares o para animaciones futuras
 import { MailIcon } from '../../icons/MailIcon';
 import { Whatsapp } from '../../icons/Whatsapp';
 import { Facebook } from '../../icons/Facebook';
@@ -43,7 +43,7 @@ export function NivelPrimario() {
 
         {/* Columna de Cita (se mantiene) */}
         <div className="bg-isei-footer rounded-3xl rounded-tr-none   flex flex-col gap-4 relative overflow-hidden max-w-screen-xl mx-auto">
-          <img class="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/primario.webp" alt="" />
+          <img className="rounded-lg w-full h-full object-cover mask-fade-b-25" src="/image/primario.webp" alt="" />
           <div className="absolute h-1/3 aspect-square rounded-full bg-isei-blue -left-5 -bottom-16 blur-[120px]"></div>
           <div className="absolute h-80 aspect-square rounded-full bg-colegio -right-40 bottom-12 blur-[100px] "></div>
           

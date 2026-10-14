@@ -6,46 +6,67 @@ import { runCode } from "../components/hooks/useRunCode";
 import { ArrowRightIcon } from "../icons/ArrowRight";
 import { MetaData } from "../components/MetaData";
 import { ShareButton } from "../components/ShareButton";
+import { NotFound } from "./NotFound";
+import DOMPurify from "dompurify";
+
+// El id llega en base64 desde la URL; solo se aceptan ids numéricos
+// para que no se pueda inyectar nada en la consulta.
+function decodeNewsId(id) {
+  try {
+    const decoded = atob(id);
+    return /^\d+$/.test(decoded) ? decoded : null;
+  } catch {
+    return null;
+  }
+}
 
 export function Noticia() {
   const { id } = useParams();
   const [articleData, setArticleData] = useState(null);
   const [relatedArticles, setRelatedArticles] = useState([]);
-  const idDecoded = atob(id);
-
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  const [notFound, setNotFound] = useState(false);
+  const idDecoded = decodeNewsId(id);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
-
-
   useEffect(() => {
+    setArticleData(null);
+    setRelatedArticles([]);
+    setNotFound(false);
+
+    if (!idDecoded) {
+      setNotFound(true);
+      return;
+    }
+
+    let cancelled = false;
+
     const fetchData = async () => {
-      // Tu lógica para obtener articleData y relatedArticles se mantiene igual
       const response = await runCode(`-st news -wr id[${idDecoded}]`);
       const article = response.map((a) => ({
         id: a.id,
         title: a.title,
         date: formatDate(a.publish_date)?.fechaCarta,
-        // Asegúrate que 'publish_date' también esté disponible si lo necesitas para article:published_time
-        // publish_date_iso: a.publish_date, // Ejemplo si necesitas la fecha en formato ISO
         description: a.short_description,
-        content: a.content,
+        content: DOMPurify.sanitize(a.content ?? ''),
         imageUrl: a.featured_image_url, // Esta URL debe ser absoluta para og:image
         category_id: a.category_id,
-        idEncoded: btoa(a.news_id),
-        // category_name: a.category_name, // Si puedes obtener el nombre de la categoría
+        idEncoded: btoa(idDecoded),
       }))[0];
+      if (cancelled) return;
+      if (!article) {
+        setNotFound(true);
+        return;
+      }
       setArticleData(article);
 
-      if (article?.category_id) {
+      if (/^\d+$/.test(String(article.category_id))) {
         const related = await runCode(
-          `-st news -wr category_id['${article.category_id}'] AND id<>${article.id} -lt 4`
+          `-st news -wr category_id['${article.category_id}'] AND id<>${idDecoded} -lt 4`
         );
+        if (cancelled) return;
         const filtered = related
           .filter((a) => a.id !== article.id)
           .map((a) => ({
@@ -59,8 +80,12 @@ export function Noticia() {
     };
 
     fetchData();
-  }, [id]);
+    return () => {
+      cancelled = true;
+    };
+  }, [idDecoded]);
 
+  if (notFound) return <NotFound />;
   if (!articleData) return <div className="mt-24 text-center">Cargando...</div>;
 
   // Construye la URL canónica completa
@@ -97,7 +122,7 @@ export function Noticia() {
             url={canonicalUrl}
             title={articleData.title}
             text={articleData.description}
-            image={articleData.imageUrl} // Usa la URL de la imagen para compartir
+            imageUrl={articleData.imageUrl}
           />
           </div>
           <img
